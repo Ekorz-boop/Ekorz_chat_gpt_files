@@ -1,0 +1,180 @@
+
+
+e Napoleonics
+
+
+
+Contents
+Introduction	2
+Components	3
+Setting up the game	4
+Game rounds	5
+Order Phase	6
+Movement Phase	6
+Shooting Phase	6
+Charge Phase	6
+Morale Phase	7
+Unit Morale	7
+Army Morale	7
+Commands and orders	8
+Making an order check	8
+Rally	8
+Leaders	8
+General Stats	8
+Officer Stats	8
+Units	8
+Formations	9
+
+
+
+
+Introduction
+Welcome to "Simple Napoleonics", a tabletop miniature strategy game set in the era of grand armies, brave generals, and the transformative warfare of the early 19th century. Drawing inspiration from the titanic struggles of the Napoleonic Wars, this game lets you recreate some of history's most decisive battles or devise your own campaigns on the fields of Europe.
+As a player, you command an army of miniatures representing various types of units from the Napoleonic era, including infantry, cavalry, and artillery. Each unit has its own strengths, weaknesses, and special abilities that reflect their historical roles and tactics. Additionally, the game includes rules for terrain, offering further strategic depth and bringing the battlefield to life.
+In "Simple Napoleonics ", leadership plays a key role. Your Generals and Officers not only issue orders to your units, but also inspire them with their presence on the battlefield. Each Leader has unique abilities and personality traits that can turn the tide of battle.
+The game uses a simple, yet robust system based on six-sided dice ( henceforth "D6"), making it accessible to beginners while still offering depth and complexity for veteran wargamers. The game sequence follows a logical order of play, making it easy to understand the flow of the game and the impact of your decisions.
+Whether you're a fan of history, a lover of strategy games, or just enjoy the camaraderie of gaming with friends, "Simple Napoleonics" offers a rich, immersive experience. Step into the boots of Napoleon, Wellington, or Blücher and lead your army to victory!
+
+
+Components
+In "Empires at War: The Napoleonic Battles", you will command your forces using the following components:
+Miniatures: Each player will need a collection of miniatures to represent their army. These miniatures are divided into three types: Infantry, Cavalry, and Artillery. The specific mix of units in your army can vary based on the scenario and your personal strategy. Basing does not matter as long as its consistent across all armies in the battle.
+Generals and Officers: In addition to the regular units, each player will have several Leaders in the form of Generals and Officers. These figures are key to your strategy and have a significant impact on your army's performance in battle.
+Dice: Gameplay relies on six-sided dice (D6) to resolve combat and other actions. We recommend each player has at least 10 dice to ensure smooth gameplay.
+Measurement Tools: A ruler or tape measure marked in inches will be needed to measure movement distances and the range of attacks.
+Game Board: A flat surface, ideally 6' x 4' (or larger), to set up your battlefield. The specific layout and terrain will vary based on the scenario you're playing.
+Terrain Features: Various elements like hills, forests, buildings, rivers, and fences to create a realistic and strategic battlefield. These can be purpose-built model terrain or improvised items.
+Markers: To keep track of unit conditions such as hidden movement, cover, and morale status.
+Scenario & Campaign Booklets: These contain specific rules, objectives, and setup instructions for various battles and campaigns.
+Rulebook: This book contains the full rules of the game, along with background information, painting guides, and other useful resources. However, once you're familiar with the game, the included Quick Reference Sheet should be all you need for most games.
+Now that you know what you'll be working with, it's time to assemble your army and prepare for battle. Good luck, General!
+Setting up the game
+Setting up a "Simple Napoleonics" battle involves several easy steps to ensure a balanced and engaging gameplay experience. Follow these steps to prepare for each battle:
+Choose a Scenario: The scenario you choose will determine the layout of the battlefield, the composition and objectives of each army, and any special rules that apply. You can choose a scenario from the Scenario Booklet, or design your own.
+Assemble Your Army: Based on the scenario, each player will assemble an army from their collection of miniatures. Each unit's point value is listed on its Unit Stat Card; the total point value of an army is typically determined by the scenario.
+Place Terrain Features: Again, based on the scenario, players will place terrain features on the game board. These could include hills, forests, rivers, buildings, and other features. The placement of these features can have a significant impact on strategy and tactics during the game.
+Deploy Your Forces: Each player will deploy their units on the game board according to the scenario's instructions. This usually involves placing your units within a certain distance of your edge of the game board.
+Choose Generals and Officers: Based on the size of the army and scenario, choose the appropriate Generals and Officers. Note their Leadership scores, Command Radius, and special abilities.
+Prepare Dice and Markers: Make sure you have enough dice and markers to track various game states like morale, concealment, and hidden units.
+Once setup is complete, you're ready to start playing!
+
+
+Game rounds
+"Simple Napoleonics" is played in rounds, each representing a short period of time on the battlefield. A round is divided into five phases, which must be performed in the following order:
+1. Order Phase: During this phase, Generals and Officers issue orders to their units. Orders are issued one at a time, with the player with the highest-ranking General going first. Orders include movement, shooting, and charging. The success of an order depends on the issuing Leader's Leadership score.
+2. Movement Phase: Units that were given a movement order can now move across the battlefield. The distance a unit can move depends on its movement score and any modifiers from terrain or its current formation.
+3. Shooting Phase: Units that were given a shooting order can now attack enemy units within range. The effectiveness of a shooting attack depends on the shooting unit's firepower, the target's armor, and any modifiers from cover or concealment.
+4. Charge Phase: Units that were given a charge order can now attempt to charge an enemy unit. If the charge is successful, the charging unit can make a melee attack against the target.
+5. Morale Phase: At the end of each round, units that took casualties must take a morale test to see if they hold their ground or retreat. The likelihood of passing a morale test depends on the unit's morale score and any modifiers from Leaders or special rules.
+Once all five phases have been completed, a new round begins with the Order Phase. The game continues in this way until one player achieves their objective or one army is routed.
+
+
+Order Phase
+Simply state what you want your brigades to do. You will then attempt an order check to see if they follow through or not (see "Making an order check").
+Movement Phase
+No dice rolls are typically required during the Movement Phase, unless specific conditions or abilities require it (e.g., crossing difficult terrain, checking for hidden units, etc.). Simply move a unit up to its Movement (Mov) in inches. Additionally, if a unit is within shooting range of an enemy infantry or cavalry unit, it may only move forward or backward. 
+Shooting Phase
+Choose a unit to shoot with and an enemy unit within range and line of sight as the target.
+Roll a number of D6 equal to the shooting unit's Volley (Vol). Each roll of 4+ is a hit. Modify this requirement based on any relevant modifiers (e.g., terrain, special abilities, etc.).
+The target unit then rolls a number of D6 equal to the number of hits, trying to equal or exceed their Resilience (Res) value to negate the hits. Any roll that is lower than the unit's Resilience (Res) value is a casualty, and the target unit loses one Morale (Mor). 
+Charge Phase
+Declare a Charge with a unit against an enemy unit within charge range (12").
+Roll a D6 and add the result to the charging unit's Movement (Mov) divided by two. If the total is equal to or greater than the distance to the target unit in inches, the charge is successful, and the unit moves into base contact with the target.
+The target unit may perform a defensive fire against the charging unit but with a -1 penalty to their Volley (Vol).
+If the charge reaches the target, the charging unit rolls a number of D6 equal to its Charge (Chr)  value. Each roll of 4+ is a hit.
+The target unit then rolls a number of D6 equal to the number of hits, trying to equal or exceed their Resilience (Res) value to negate the hits. Any roll that is lower than the unit's Resilience (Res) value is a casualty.
+
+Morale Phase
+Unit Morale
+If a unit suffered casualties during the turn, it must take a morale check. Roll a D6 and compare the result to the unit's Morale (Mor). If the result is higher than the unit's Mor, the unit falls back towards the nearest table edge a distance in inches equal to the difference.
+Army Morale
+Even the best armies can lose their will to fight. In "Simple Napoleonics", this concept is represented by the Army Morale system. This system can trigger a mass rout, simulating the situations where an army's cohesion breaks down and they retreat from the battlefield.
+Calculating Army Morale: At the start of the game, each player calculates their Army Morale value. This is equal to the total number of units in their army (including Leaders), plus any modifiers from special scenario rules.
+Tracking Army Morale: Each time a unit is eliminated or forced to retreat due to a failed morale test, the player decreases their Army Morale by one. If a General or Officer is eliminated, decrease the Army Morale by two
+Checking for Mass Rout: At the end of each round, each player checks if their Army Morale is at or below 25% of its starting value (rounding up). If it is, they must make an Army Morale Check.
+Making an Army Morale Check: Roll a D6. If the result is less than or equal to the number of Generals still on the battlefield, the army holds together and continues to fight. If the result is greater, the army breaks, and a mass rout occurs.
+Mass Rout: If an army routs, it immediately loses the game. This represents the army breaking off the battle and retreating from the field. Note that individual units do not need to make any further morale checks, as the game ends as soon as a mass rout occurs.
+Remember, the goal of "Simple Napoleonics" is not to annihilate your enemy, but to break their will to fight. Use your units wisely, protect your leaders, and keep a close eye on your Army Morale to prevent a mass rout.
+
+Commands and orders
+Making an order check
+When issuing an order for a brigade Officer, roll a number of D6 equal to their Leadership (Ldr) score. The order is successful if at least one of the dice shows a 4 or higher.
+Rally
+During the Morale Phase, one unit within the Command Radius of an Officer can add the Rally (Ral) value from the closest Officer to their morale check.
+Leaders
+Each army will have a General and a number of Officers proportional to the size of the army. Officers provide bonuses to units within their command radius and are responsible for issuing orders to their units. Generals bring different Tactical Genius (TG) abilities to the battle, which very well may turn the tide of battle.
+General Stats
+Command Radius (CR): The range in inches within which the General can issue orders and provide bonuses.
+Leadership (Ldr): The number of dice the General rolls when issuing orders.
+Tactical Genius (TG): A special ability that can be used once per game.
+Officer Stats
+Command Radius (CR): The range in inches within which the Officer can relay orders and provide bonuses.
+Leadership (Ldr): The number of dice the Officer rolls when relaying orders.
+Rally (Ral): The bonus the Officer provides to units' Morale when they are within his command radius.
+Units
+Units represent various military formations such as Infantry, Cavalry, and Artillery. Each unit has the following statistics:
+* Movement (Mov): How far a unit can move in inches.
+* Volley (Vol): The number of dice rolled when shooting.
+* Charge (Chr): The number of dice rolled when charging.
+* Morale (Mor): A value for how high morale a unit has. It is also the number needed to pass a morale check.
+* Resilience (Res): The number needed to avoid damage.
+Formations
+During the Napoleonic era, the way an army arranged its troops on the battlefield - its formation - was critical to its success or failure. In "Simple Napoleonics", units can adopt various formations, each with its own strengths and weaknesses. The three main formations are: Square, Attack Column, and Line.
+Square Formation: When facing a threat from all sides, especially from cavalry, units would form a square. In this formation, the unit's bases are arranged in a 2x2 square facing outwards. While in Square formation, a unit gains a +2 bonus to its Resilience against Cavalry charges but suffers a -1 penalty to Volley (Vol) and Movement (Mov) due to its compact and rigid structure. Changing into or out of Square formation requires an Order.
+Attack Column Formation: This formation was typically used for moving quickly and for shock attacks. The unit's bases are arranged in a narrow, deep column (2 x N). An Attack Column gains a +1 bonus to Charge (Chr), reflecting its aggressive purpose. However, it suffers a -1 penalty to Volley (Vol) due to the limited number of troops that can effectively fire at once. Changing into or out of Attack Column requires an Order.
+Line Formation: The line was the most common formation for battle, allowing the maximum firepower to be brought to bear. The unit's bases are arranged in a long, thin line (N bases wide, 1 base deep). Units in Line formation gain a +1 bonus to Volley (Vol) but suffer a -3" penalty to Movement (Mov), due to the difficulty of moving a large number of troops in a straight line. Changing into or out of Line formation requires an Order.
+Choosing the right formation for the right situation is key to victory in "Simple Napoleonics". Use Square to defend against cavalry, Attack Column to move quickly or charge, and Line to maximize your volley fire. But remember, changing formation requires foresight and good command - it takes an Order to change your formation, so plan ahead!
+National Spirits
+United Kingdom: Stiff Upper Lip - British units have a high morale and are difficult to break. They gain a +1 bonus to all morale tests.
+France: Elan - The French army, under Napoleon's leadership, revolutionized warfare with its flexible tactics and emphasis on the offensive. French units can re-roll failed charge tests, and they also gain a +1 bonus to their movement.
+Austria: Defensive Doctrine - The Austrians often favored defensive strategies. Austrian units gain a +1 bonus to their resilience when they are in defensive terrain.
+Prussia: Prussian Goosestep - Prussian units are well-drilled and highly disciplined. They gain a +1 bonus to volley tests.
+The Lowlands (Belgium and Netherlands): Combined Arms - The armies of the Lowlands often mixed infantry, cavalry, and artillery together effectively. Once per round, a Lowlands unit can perform a second action if it is within command radius of a different type of unit (infantry, cavalry, or artillery).
+German Minor States: Allied Support - These states often fought alongside the larger powers. Once per game, a unit from a German minor state can call in support from an allied brigade, allowing that unit to immediately perform a free action.
+Russia: Artillery Dominance - The Russian army was known for its effective use of artillery. Russian artillery units get a +1 bonus to their Volley rolls.
+Spain: Guerrilla Tactics - Spanish units often used guerrilla tactics to harass the French. Spanish units can reroll failed concealment checks.
+North Italy States: Rapid March - The Italian states, influenced by their French allies, used rapid maneuvers to surprise their enemies. Italian units gain a +1 bonus to their movement.
+
+
+Quick Reference
+Turn Order:
+1. Order Phase: Issue orders using Ldr value. Roll D6; pass on a roll equal to or less than Ldr.
+2. Movement Phase 
+3. Shooting Phase
+4. Charge Phase
+5. Morale Phase: Perform Morale checks on both army and unit level.
+Terrain Effects:
+* Open Ground: No effect on movement or combat.
+* Rough Terrain: -3" to movement. Cavalry/Artillery cannot charge.
+* Obstacles: Roll D6 to cross; on 3+, unit can cross. Units in line cannot cross.
+* Water: Halve Mov. No shooting or charging.
+* Buildings: Infantry can enter/exit during movement. Units inside cannot move or charge and suffers -1 Vol .
+Visibility and Concealment:
+* Cannot target units you cannot see.
+* -1 to Vol when shooting at concealed units.
+Cover:
+* +1 to Res when in cover.
+* +2 to Res when inside a building.
+Formations:
+Line: +1 to FP during shooting phase.
+Square: Cavalry charges halved in effectiveness.
+Column: +2" to Mv, -1 to FP.
+
+
+Leaders:
+
+Generals: Can issue orders to any unit within Command Radius.
+Officers: Can issue orders to any unit in their Brigade.
+Leadership Traits and Tactical Genius abilities: Refer to rulebook or character sheet.
+Fog of War:
+
+Up to half (round down) of units can start the game hidden.
+Hidden units represented by markers. Move as normal but cannot shoot, charge, be shot at, or be charged.
+A unit within shooting range of a hidden marker can reveal it on a roll of 4+.
+When a hidden unit is revealed, it can make a surprise attack: a normal shooting attack with +1 to FP.
+Remember, these are just the basic rules. For full details and exceptions, refer to the rulebook.
+
+
+
+
+
