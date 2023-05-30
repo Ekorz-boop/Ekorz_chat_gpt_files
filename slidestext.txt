@@ -1,0 +1,12086 @@
+PA1473 Software Development
+Lecture 2: Software
+Engineering Foundations
+
+Goals: What for today?
+🁢🁢 History of Software Engineering in a Nutshell
+🁢🁢 Discuss the foundations of Software Engineering
+🁢🁢 The road to where we are today
+
+Industrial (R-)evolution(s)
+4
+Digitalization
+
+3
+2
+1
+
+Electronization
+Electrification
+
+Mechanization
+Introduction of
+production
+facilities
+(18th century)
+
+Introduction of
+production lines
+base on division
+of labour
+(19th century)
+
+Introduction of
+(ICT)
+electronics for
+production
+control
+(1970’s)
+
+Advancement in
+automation,
+interconnection
+and flexibility
+(Today)
+
+Economical, political, and societal change (“transformation”)
+
+introduction of technology in our lives
+
+introduction of technology in our lives
+
+The SOFTWARE (R-)EVOLUTION
+
+1969
+
+1990s
+
+2010s
+
+IC
+e
+TS
+
+n
+
+in e / C
+
+Avi
+o
+
+n ic
+
+(Higher) Education
+
+ia
+
+h e m is
+tr y / …
+
+o tiv
+e&
+
+tio
+
+Print & Med
+
+M e d ic
+
+Au t
+om
+
+uc
+
+or
+t
+c
+
+Pr
+od
+
+Software Transformation PERMEATES
+all Industrial Sectors
+
+?
+
+…
+
+Software Engineering History
+
+8
+
+Software Engineering History
+
+9
+
+Software Crisis
+“The major cause of the software crisis is that the machines have become several
+orders of magnitude more powerful!
+To put it quite bluntly: as long as there were no machines, programming was no
+problem at all; when we had a few weak computers, programming became a mild
+problem, and now we have gigantic computers, programming has become an equally
+gigantic problem.”
+
+Edsger Dijkstra, 1968
+https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+
+10
+
+THE (EVER)GROWING SIZE OF SOFTWARE
+🁢🁢 Do you know what is the
+🁢🁢
+🁢🁢
+
+picture on the left?
+Margaret Hamilton with the
+listings of the actual code of
+the Apollo Guidance Computer
+Yes! This is the software that
+brought humankind to the
+moon
+
+11
+
+How It Looks Like? THE SIZE OF SOFTWARE
+01 int partition(int arr[], int left, int right)
+02 {
+03
+int i = left, j = right;
+04
+int tmp;
+05
+int pivot = arr[(left + right) / 2];
+06
+while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18
+};
+19
+return i;
+20 }
+
+01 int partition(int arr[], int left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left + right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+20 lines of code
+
+How It Looks Like? THE SIZE OF SOFTWARE
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+01
+partition(int arr[], int
+18 int
+};
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+01
+partition(int arr[], int
+18 int
+};
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+01 int partition(int arr[], int
+left, int right)
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,}; int right)
+19 return i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+01
+17 int
+} partition(int arr[], int
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+left,};return
+inti; right)
+19
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--; arr[], int
+01 int} partition(int
+17
+18
+}; int right)
+left,return
+19
+i;
+20
+02} {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+01 };int} partition(int arr[], int
+18
+19 return i;
+left,
+int right)
+20
+}
+02 {
+03 int i = left, j = right;
+04 int tmp;
+05 int pivot = arr[(left +
+right) / 2];
+06 while (i <= j) {
+07
+while (arr[i] < pivot)
+08
+i++;
+09
+while (arr[j] > pivot)
+10
+j--;
+11
+if (i <= j) {
+12
+tmp = arr[i];
+13
+arr[i] = arr[j];
+14
+arr[j] = tmp;
+15
+i++;
+16
+j--;
+17
+}
+18 };
+19 return i;
+20 }
+
+~2.000 lines of code
+(Still a toy example…)
+
+How It Looks Like? THE SIZE OF SOFTWARE
+
+100.000 lines of code
+(We’re getting somewhere…)
+
+How It Looks Like? THE SIZE OF SOFTWARE
+
++
+
+=
+
+100.000 lines of code
+
+How It Looks Like? THE SIZE OF SOFTWARE
+Typical iPhone app
+Hubble Space
+Telescope
+Mars Curiosity
+Rover
+Typical browser
+10.000.000 lines of code
+
+How It Looks Like? THE SIZE OF SOFTWARE
+
+10.000.000 lines of code
+
+How It Looks Like? THE SIZE OF SOFTWARE
+Large Hydron Collider
+Facebook
+Modern high-end car
+Total DNA* of a mouse
+(*base pairs in genome)
+
+Google codebase
+2.000.000.000 lines of code
+
+Complexity: TECHNICAL & human side
+
+Network of interacting components
+(microservices) in a music streaming system
+
+Task dependencies between
+Development teams
+
+But machines grow as well: Moore’s Law
+
+20
+
+Size and complexity: How did we deliver software
+🁢🁢 Flipping switches 🁢🁢 Floppy Disks
+
+🁢🁢 USB Flash drives
+
+🁢🁢 Punch cards
+
+🁢🁢 The cloud…
+
+🁢🁢 CD and DVD
+
+Another Software Engineering Law: Lehman’s laws
+🁢🁢 (1974) "Continuing Change" — a software system must be continually
+🁢🁢
+🁢🁢
+🁢🁢
+
+adapted or it becomes progressively less satisfactory.
+(1974) "Increasing Complexity" — as a software system evolves, its
+complexity increases unless work is done to maintain or reduce it.
+(1991) "Continuing Growth" — the functional content of an system
+system must be continually increased to maintain user satisfaction
+over its lifetime.
+(1996) "Declining Quality" — the quality of a software system will
+appear to be declining unless it is rigorously maintained and adapted
+to operational environment changes.
+er
+v
+e
+n
+e
+r
+U s e r s a :)
+h ap p y
+
+22
+
+History of Software Engineering: Software Crisis
+🁢🁢 The notion of Software Engineering came to a response to the
+🁢🁢
+🁢🁢
+🁢🁢
+
+software crisis and was first used in 1969 in a NATO conference
+It become clear that individual approaches to program development
+did not scale to complex systems
+Complex systems were unreliable, run into over-costs and were often
+never delivered
+The common result of a Software Engineering project was cancelation
+
+23
+
+The Software Crisis
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+
+Projects running over-budget
+Projects running over-time
+Software was very inefficient
+Software was of low quality
+Software often did not meet
+requirements
+Projects were unmanageable and
+code difficult to maintain
+Software was never delivered
+24
+
+List of major software project fails
+Started Terminated
+
+System name
+
+Type of system
+
+1980s
+
+TAURUS
+
+Electronic trading platform
+
+1993
+
+Country or region
+United
+Kingdom(London)
+
+19821994
+
+FAA Advanced
+Automation
+System
+Air Traffic Control
+
+19841990
+
+RISP
+
+Integrated computer services
+
+United States
+United
+Kingdom(Wessex)
+
+19972000
+
+Bolit
+
+Customer service, finance and
+administration system
+
+Sweden
+
+CSIO Portal
+
+Common technological platform
+for brokers and insurers to
+improve workflow efficiency
+Canada
+
+19992006
+
+Outsourced or inProblems
+Cost (expected) house?
+Outcome
+Scope creep, cost overrun. The
+project was never completed. £75m
+Stock exchange
+?
+Cancelled
+Cost overruns, underestimation
+of ATC complexity, delays, nonFederal Aviation
+incremental change. existing
+Administration
+system.[1]
+$3B-$6B
+?
+Scrapped
+Scope creep, cost overrun. The
+project was never completed. £63m (£29m) ?
+Wessex Health Authority
+Cancelled
+Too complicated, bad
+functioning, cost overrun. The
+project was after completion
+never used, the agency still
+Patent and Registration
+today does not have a working SEK 300m
+Office
+($35m)
+IT system.[2][3]
+Outsourced
+Scrapped
+~$15 million
+Low user adoption, conflict
+Outsourced to
+CAD"CSIO
+Centre for Study of Insurance between insurers, new
+IBM"Reconfiguring
+portal
+Operations
+technology, lack of funding
+CSIO".
+abandoned
+Abandoned
+Type of purchaser
+
+…
+
+25
+
+Software bugs…
+🁢🁢 The quality problem was in
+🁢🁢
+
+these days a bit more physical
+The term comes “bug” comes
+for a reason
+
+26
+
+Why Software Engineering is Important? Quality? Cost?
+Ariane 5 – June 1996
+
+Mars Climate Orbiter – September 1999
+
+Why Software Engineering is Important? Quality? Cost?
+Therac-25 - 1987
+
+2003 Blackout
+
+And Nowadays?
+
+Mission for Software Engineering
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+
+Address poor quality software
+Keep projects within budget and timeframe.
+Systematically build software
+Build the software according to specifications
+
+Software Quality
+🁢🁢 Nowadays we need ”good
+
+quality” software
+🁢🁢 What does software need to do /
+
+🁢🁢
+🁢🁢
+
+be or have to be of ”good
+quality”
+How can we measure the quality
+of software?
+What is the cost of ”good
+quality”?
+
+Who uses software…
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+
+Other engineers and developers
+Government
+Companies for management
+Companies for business
+Home users
+Phone users
+Everyday applications
+One-time applications
+Toddler to granny (even cats)
+Autonomous systems bots, and
+robots
+
+Then
+
+Today humans are in minority
+on the web…
+The most frequent users of
+Internet are machines…
+
+Now
+
+The change
+🁢🁢 The change of ”who” is developing-, using- it and financing software
+from yesterday to tomorrow, will strongly influence how it is
+constructed…
+
+33
+
+Show me the money…
+🁢🁢 Increased spending in IT
+🁢🁢 Not just IT companies
+🁢🁢 30 years ago
+🁢🁢
+
+🁢🁢 Focus on mechanical improvement, weight, duration, efficiency, maintainability
+🁢🁢 Strong in traditional engineering
+Now
+🁢🁢 Focus on prediction, routing, logistics, information gathering, autonomous transportation
+🁢🁢 Strong in the ability to mange the software creation process
+
+🁢🁢 In the future software and the knowledge about how to create
+software-intensive systems is essential
+
+What happens tomorrow?
+🁢🁢 What we know is that we do not know…
+🁢🁢 Will software develop software based on what we tell it to develop…
+🁢🁢 AI, Big Data, Data Mining is the new oil…
+🁢🁢 A good quote: ”Technology development have never gone as fast as it
+does today… and it will never be as slow ever again…”
+
+Software Engineering Fundations
+How do we develop software?
+
+36
+
+How do we create software nowadays?
+We split into groups and talk about it, creating sticky notes in padlet
+
+https://padlet.com/javier_gonzalez_huerta/c36elc4ll1kqo17z
+
+Questions?
+
+PA1473 Software Development
+Lecture 2: Software
+Engineering Foundations
+
+PA1473 Software Development
+
+Lecture 3: Generic Steps
+
+How do we create software nowadays?
+
+MJUKVARUUTVECKLARE UNDER 1970-TALET
+Thick glasses
+Big computers
+Boring offices
+Typing code alone
+
+MJUKVARUUTVECKLARE UNDER 1990-TALET
+Thin glasses
+Smaller computers
+Cubicle offices
+Typing code alone
+
+MJUKVARUUTVECKLARE IDAG
+No glasses
+Light computers
+Fun offices
+Create software in teams
+
+When building something – Common steps
+🁢🁢 What shall I build
+
+🁢🁢 Shelter from weather and cold
+
+🁢🁢 How will I build it
+
+🁢🁢 Form of a house
+
+🁢🁢 Build it
+
+🁢🁢 Assemble planks to a structure
+
+🁢🁢 Does it fit and work
+
+🁢🁢 Doesn’t rain in, and it is warm
+
+🁢🁢 Use it to solve the problem
+
+🁢🁢 Move in to get out of the weather
+
+And what about software?
+🁢🁢 What shall I build
+🁢🁢 How will I build it
+🁢🁢 Build it
+🁢🁢 Does it fit and work
+🁢🁢 Use it to solve the problem
+
+Software Engineering Foundations
+Foundations of the Software Engineering Process
+
+Mission for Software Engineering
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+
+Address poor quality software
+Keep projects within budget and timeframe.
+Systematically build software
+Build the software according to specifications
+
+🁢🁢 Have an appropriate methodology that will satisfy the desired goals…
+
+Processes (Software Development Processes)
+
+Pre-conditions
+Resources
+Steps, Activities, Instructions
+Post-Conditions
+
+🁢🁢 Purpose of that process step
+
+Input
+
+Process
+
+Consumed
+Resources
+Lead Time
+Person time
+Other
+materials.
+
+Post Cond
+
+🁢🁢
+🁢🁢
+🁢🁢
+🁢🁢
+
+Pre Cond
+
+🁢🁢 All can be described as a process
+🁢🁢 Parts of a process
+Output
+
+Connecting the process together
+
+Consumed
+Resources
+Lead Time
+Person time
+Other
+materials.
+
+Consumed
+Resources
+Lead Time
+Person time
+Other
+materials.
+
+Output
+
+Input
+
+Process
+
+Consumed
+Resources
+Lead Time
+Person time
+Other
+materials.
+
+Post Cond
+
+Process
+
+Pre Cond
+
+Input
+
+Post Cond
+
+Output
+
+Pre Cond
+
+Process
+
+Post Cond
+
+Input
+
+Pre Cond
+
+🁢🁢 Each step of the process should be motivated.
+🁢🁢 Different unique steps can be merged into a whole process
+
+Output
+
+Process as the solution?
+🁢🁢 Not always… There might be bad processes as well.
+🁢🁢 Solution is standardized processes
+🁢🁢 The problem is that one process that fit all is hard to find and build.
+🁢🁢 Solution, create frameworks that assess processes, are they any good
+or not?
+
+Example Capability Maturity Model (CMMI)
+🁢🁢 Is a framework that addresses the software process.
+🁢🁢 How the process is constructed and how it is maintained.
+🁢🁢 Built on maturity levels of the processes and in prolongation the
+organisation.
+
+🁢🁢 Claims to be able to handle several aspects of development,
+hardware, software, organizational issues.
+
+Example Capability Maturity Model (CMMI)
+
+IEEE - Institute of Electrical and Electronics Engineers
+🁢🁢 Provides standards and processes
+🁢🁢 Provides support for ”what” should be produced and controlled, not
+that much support for how you should do it…
+
+🁢🁢 Also provides standards and reviews, that makes sure that you are
+complying to standards, thus will get the certification.
+
+The common problem… buts and ifs…
+🁢🁢 Not many projects have the same characteristics (one-of kind of
+problems)
+
+🁢🁢 When creating a generic process.
+
+🁢🁢 Too generic – not giving any support…
+🁢🁢 Or too complex – trying to cover every aspect.
+
+Generic Steps
+
+Phases of software development
+
+17
+
+How do we develop software?
+Inception
+
+I spel köp…
+Roligt i åldrarna (mental) 7-18
+Spela med/mot vänner…
+”Coolt spel”
+
+Fungera på PC, PS4, X…
+Expanderbar värld…
+Personliga karaktärer…
+
+Idéer, KRAV, uppfinna, fantasi, prata med spelare, kolla på andra spel
+
+Pre-study/Feasibility
+Overview:
+
+Is a short and focused activity with the intention to gain more knowledge to determine if it is possible to
+deliver the intended system
+Answering 3 questions:
+1) Does the system provide desired value,
+2) Can the system be implemented within budget and timeframe
+3) If needed, can the system interact with other systems?
+
+Input:
+
+Overall vision and proposal for the system, rough idea of requirements and limitations for the project.
+
+Pre-condition:
+
+Is there a possibility to conclude something from the system
+
+Process:
+
+•
+•
+•
+•
+
+Post-condition:
+
+Completed process, and a summary conclusion
+
+Output:
+
+Knowledge gained about the feasibility, rough idea on how to build the solution, and observation points.
+
+Identify sketch for how the solution could look like
+Identify major drivers for cost and time
+Assess uncertainties (i.e. external dependencies that you are not in control over)
+Make a judgement call about feasibility
+
+How do we develop software?
+Analysis
+Story
+Koncept
+
+Inception
+
+Tekniska krav och behov
+Hur?
+
+Analysera reaktioner
+Plattformskrav
+Skalbarhet
+…
+
+Ta idéer (KRAV) till HUR (lösning) samt nedbrytning
+
+Requirements Engineering
+Overview:
+
+The methodology and tools used to distil the accurate requirements from the stakeholders.
+
+Input:
+
+Requirements originator (source to extract requirements from)
+• Customers
+• End users
+• Business, research, government,
+• Operating environment conditions
+
+Pre-condition:
+
+The input is available and accessible
+
+Process:
+
+•
+•
+•
+
+•
+
+Based on the originator of requirements, apply appropriate methodology.
+Identify the requirements and document them
+Classify the requirements
+• Non-functional
+• Functional
+• Legislation
+Prioritize the requirements
+
+Post-condition:
+
+Complete collection of requirements (as complete as possible).
+
+Output:
+
+Requirements for the intended system (typically a requirement specification).
+
+How do we develop software?
+Design
+Arkitektur
+Inception
+
+Grafik
+
+Analysis
+
+Interface
+Tekniskt HUR?
+
+Kod
+Plattformskrav
+Prestanda
+…
+
+HUR får en teknisk kostym
+
+Software Design
+Overview:
+
+The activity where you take the requirements through the analysis, architecture, and design.
+
+Input:
+
+Gathering of requirements and other instructions, e.g. technology to be used and so on. (It is rare that you
+are able to start on a blank canvas…)
+
+Pre-condition:
+
+Requirements available along with the other tools and techniques needed to perform the development task.
+
+Process:
+
+•
+•
+•
+•
+
+Post-condition:
+
+The design is completed and measures taken for verification that it will supports the desired operating
+environment and main requirements.
+
+Output:
+
+Completed architecture and design.
+
+Analyse the requirements and desired quality attributes.
+Map out overall components in an architecture.
+Identify suitable deign patterns.
+Verify the design – will it support the needed requirements including non-functional ones?
+
+23
+
+How do we develop software?
+Development
+Utveckling
+Inception
+
+Analysis
+
+Design
+
+Kod
+Testa av…
+Gå tillbaka…
+Kompabilitet
+Integration
+…
+
+Att faktiskt ”bygga” mjukvaran…
+
+Implementation
+Overview:
+
+The activity where you take the architecture and design along with the requirements through
+implementation stages.
+
+Input:
+
+Gathering of requirements and other instructions, e.g. technology to be used and so on. (It is rare that you
+can start on a blank canvas…)
+
+Pre-condition:
+
+Requirements available along with the other tools and techniques needed to perform the development task.
+
+Process:
+
+•
+•
+•
+•
+•
+•
+
+Post-condition:
+
+The system is ready for system test, all requirements completed and verified. The system is built for target
+environment.
+
+Output:
+
+System ready to be installed for system testing.
+
+Apply development approach (Test Driven development, Pair-programming, XP, other)
+Carry out unit testing
+Version management
+Tracking of progress
+Assure compliance to requirements
+Build and integrate the system prepare for system test
+
+25
+
+How do we develop software?
+Development
+Inception
+
+Analysis
+
+Design
+
+Att faktiskt ”bygga” mjukvaran…
+
+Verification and Validation
+Overview:
+
+The phase where you assure that the requirements are fulfilled and that the requirements fulfils the initial
+mission with the system.
+
+Input:
+
+System ready for verification and validation.
+Required quality levels if they are specified… (pass-rate, run-rate, non-functional compliance)
+
+Pre-condition:
+
+Basic requirements is functioning, i.e. you are able to fruitfully initiate system wide testing.
+
+Process:
+
+•
+•
+•
+•
+•
+
+Applying appropriate test strategies for Testing
+Aim for some type of test coverage
+• Statement coverage
+• Function coverage
+Does the system fulfil the “need” i.e. does it provide the desired value for the intended users.
+Does the system perform according to the expected and required quality attributes.
+Report issues (defects) back to developers (error, fault, failure) (explain)
+
+Post-condition:
+
+System that conforms according to the specification both functionally and non-functionally
+A documented list of issues (if any exists) back to the organization for further treatement.
+
+Output:
+
+System ready for launch.
+Measurements connected to the system.
+
+27
+
+How do we develop software?
+Development
+
+Inception
+
+Analysis
+
+Testing
+
+Design
+
+Att kvalitetssäkra (testa)…
+
+How do we develop software?
+Development
+
+Inception
+
+Analysis
+
+Testing
+
+Design
+
+Att kvalitetssäkra (testa)…
+
+Deployment
+Overview:
+
+The phase where you make the complete system available for the intended usage.
+
+Input:
+
+System ready for deployment with supportive information and documentation.
+
+Pre-condition:
+
+System meeting quality criteria.
+
+Process:
+
+•
+•
+•
+•
+
+Post-condition:
+
+System with operational status verified.
+
+Output:
+
+System in operation for end-users.
+
+Handling existing system in operation.
+Porting data to updated system
+Conformance testing
+Information (or not) to users
+
+30
+
+How do we develop software?
+Development
+
+Inception
+
+Analysis
+
+Testing
+
+Release
+
+Design
+Release
+to users
+
+Project management and leadership
+
+How do we develop software?
+Development
+
+Testing
+
+Maintenance
+Inception
+
+Analysis
+
+Design
+
+Project management and leadership
+
+Release
+
+Evolution and Maintenance
+Overview:
+
+The phase where you make alterations (corrective, perfective or preventive) to an existing system. (Explain)
+
+Input:
+
+Operational system, with documentation, source code, design specification and other information needed.
+Reports on what should be corrected (defect reports, how to reproduce the problem).
+
+Pre-condition:
+
+Ability to reproduce the problem
+
+Process:
+
+•
+•
+
+Post-condition:
+
+System with operational status verified.
+
+Output:
+
+System in operation for end-users.
+
+Identify the problem in the code (or system setup)
+Identify and confirm solution (with developers, architects, users, customer)
+
+33
+
+Evolution and Maintenance
+🁢🁢 At the end of the day what we have is a Software Development
+Lifecycle for evolution
+
+Define system
+requirements
+
+Assess existing
+systems
+
+Existing
+systems
+
+Propose system
+changes
+
+Modify
+systems
+
+New
+system
+34
+
+Retirement
+Overview:
+
+The phase where you take the system out of operation
+
+Input:
+
+Dependencies mapped out
+Decisions taken on what should happen with the data
+
+Pre-condition:
+
+Decisions taken.
+
+Process:
+
+•
+•
+
+Post-condition:
+
+System out of commission and data securely handled.
+
+Output:
+
+Retired system
+
+Handle the data according to specifications
+Users informed, “out of office” message
+
+35
+
+Generic Steps
+Software Process Models
+
+36
+
+The “Waterfall” Model
+Requirements
+definition
+System and
+software design
+
+Implementation
+and unit testing
+Integration and
+system testing
+Operation and
+maintenance
+
+37
+
+Discussion
+🁢🁢 What is the problem with Plan-Driven models for software
+development?
+
+38
+
+Planning and Estimation in Plan-Driven Projects
+
+39
+
+The Cost of Change
+
+40
+
+Plan Driven Validation
+Requirements
+specification
+
+System
+specification
+
+System
+integration
+test plan
+
+Acceptance
+test plan
+
+Service
+
+System
+design
+
+Acceptance
+test
+
+Detailed
+design
+
+Sub-system
+integration
+test plan
+
+System
+integration test
+
+Module and
+unit code
+and test
+
+Sub-system
+integration test
+
+41
+
+Spiral Model
+
+42
+
+Incremental Development & Delivery
+Concurrent
+activities
+
+Specification
+
+Outline
+description
+
+Development
+
+Validation
+
+Initial
+version
+
+Intermediate
+versions
+
+Final
+version
+
+43
+
+Incremental Development & Delivery
+
+Define outline
+requirements
+
+Assign requirements
+to increments
+
+Design system
+architecture
+
+Develop system
+increment
+System
+incomplete?
+
+Validate
+increment
+
+Integrate
+increment
+
+Validate
+system
+
+Deploy
+increment
+System
+complete?
+Final
+system
+44
+
+Reuse-Oriented Software Engineering
+Application system
+available
+
+Software
+discovery
+Requirements
+refinement
+
+Requirements
+specification
+Software
+evaluation
+
+Configure
+application
+system
+Adapt
+components
+
+Components
+available
+
+Integrate
+system
+
+Develop new
+components
+
+45
+
+Reflection: Which one is best?
+
+46
+
+Questions?
+
+Requirements Engineering:
+a brief introduction
+
+Julian Frattini, DIPT
+
+Motivation
+
+Starting a software
+development project
+
+1/31/2023
+
+Minimizing wasted effort
+and costly rework
+
+2
+
+Goals
+
+Understand the
+fundamentals and
+definitions
+
+1/31/2023
+
+Understand the
+impact of
+requirements
+engineering
+
+Apply basic
+techniques to specify
+requirements
+
+3
+
+Agenda
+1. Definitions or: what exactly are requirements?
+2. Impact or: why should I care about requirements?
+3. Application or: how do I do requirements engineering?
+
+1/31/2023
+
+4
+
+Definitions
+or: what exactly are requirements?
+
+1/31/2023
+
+5
+
+Software Development Lifecycle
+Requirements
+Engineering
+
+Requirements
+Specification
+
+1/31/2023
+
+Architecture
+
+Implementation
+
+Verification
+
+Deployment
+
+Architecture
+
+Source Code
+
+Test Cases
+
+Product
+
+6
+
+Requirement & Artifact
+Requirement:
+1. A need or constraint imposed by a stakeholder.
+2. A capability or property that a system shall have.
+Artifact: A documented representation of a (1) need,
+constraint, (2) capability or property.
+REQ1: When a user enters the
+webpage, the login option shall
+be highlighted.
+
+1/31/2023
+
+REQ2: The system shall be
+secure and comply to data
+privacy guidelines
+
+7
+
+Requirements Engineering
+Requirements Engineering (RE) is the systematic, iterative,
+and disciplined approach to develop an explicit
+requirements specification that all stakeholders agree upon.
+
+1/31/2023
+
+8
+
+Levels of Abstraction
+What is the relationship between the following two
+statements?
+REQ1: The system shall be
+secure.
+
+is refined to
+
+REQ2: Communication between
+users of the system shall not be
+accessible to external actors.
+
+Statements exist on different levels of abstraction.
+
+1/31/2023
+
+9
+
+Levels of Abstraction
+Context Layer (why?)
+Project scope, stakeholders,
+goals, …
+
+Requirements Layer (what?)
+REQ1: The system
+shall be REQ2:
+secure.Communication between
+users of the system shall not be
+accessible to external actors.
+
+In scope of requirements engineering
+System
+(black-box view)
+1/31/2023
+
+System Layer (how?)
+Data model, system
+architecture, …
+
+In scope of subsequent phases,
+e.g., software architecture
+System
+(glass-box view)
+10
+
+Impact
+or: why should I care about requirements?
+
+1/31/2023
+
+11
+
+Cost of defect removal
+Requirements
+Engineering
+
+Underspecified
+Requirements
+Artifact
+
+Architecture
+
+Implementation
+
+Verification
+
+Deployment
+
+Suboptimal
+Architecture
+
+Faulty
+Implementation
+
+Misleading
+Test cases
+
+Unsatisfying
+Product
+
+The cost of removing a defect from an artifact scales
+approximately by the factor 10 for each phase that it survives.
+1/31/2023
+
+12
+
+Problem- vs. Solution-space
+
+Problem-Space
+
+Why should the system
+do something and what
+should it do?
+
+1/31/2023
+
+Solution-Space
+
+How should the system
+do it?
+
+13
+
+Problem- vs. Solution-space
+Problem Space
+
+The system shall be secure.
+
+Solution Space
+
+The system shall perform well with a large number of concurrent users.
+The system’s architecture will contain a broker-pattern at the client-server interface with at least 5 subscribed
+servers
+Large scale maintenance and/or an upgrade shall give the possibility to reach a lifetime of 50 years.
+The primary data storage subsystem will adhere to active redundancy.
+All subsystems shall not lose more than 4 hours of acquired or processed measurement data (not yet
+permanently stored) as a result of an outage in the external power supply.
+All communication shall be encrypted with SHA-2.
+
+1/31/2023
+
+14
+
+Problem- vs. Solution-space
+
+REQ1: The purpose of the
+website is to make static
+information available.
+
+SOL1: The website will be
+implemented using the Hugo
+framework.
+
+Good choice for static
+websites
+
+SOL2: The website will be
+implemented using the Svelte
+framework.
+
+Good choice for
+interactive websites
+
+For every solution-space statement you receive, first
+determine the problem you are trying to solve.
+1/31/2023
+
+15
+
+Insight so far
+
+Every project has requirements …
+… but not every team decides to write them down.
+
+1/31/2023
+
+16
+
+Application
+or: how do I do requirements engineering?
+
+1/31/2023
+
+17
+
+Motivation
+It is desirable to specify requirements, but these
+requirements need to be free of defects.
+ambiguous
+
+irrelevant
+
+incomplete
+
+vague
+
+Rather than eliciting requirements all-at-once, we can
+incrementally elicit and refine them.
+1/31/2023
+
+18
+
+Techniques
+
+Stakeholder
+Elicitation
+
+1/31/2023
+
+Goal Modeling
+
+System
+Vision
+
+Requirements
+Elicitation
+
+19
+
+Stakeholder Elicitation
+A stakeholder is a person or a group of persons, interest
+group, or organization that has to a certain extent interest in
+the system to be developed, or that takes/should take
+influence on the system’s development.
+Elementary Steps:
+1. Elicit stakeholders: list all relevant stakeholders
+2. Elicit relationships: make relationships between
+stakeholders explicit
+1/31/2023
+
+20
+
+Stakeholder Elicitation
+”A user – regardless of their ability to see colors – can log into the system.”
+Group
+stakeholders
+
+Identify explicitly
+mentioned
+stakeholders
+
+User
+
+Determine
+relationships
+
+Identify implicit
+stakeholders
+
+Customer
+Support
+has interest in
+
+Normal
+Vision
+1/31/2023
+
+Colorblind
+
+is a type of
+
+21
+
+Stakeholder Elicitation
+Identify all stakeholders in the following system description:
+TechStack Inc. issued the development of a platform where users
+can upload coding problems. Other users can submit solutions to
+those problems and a third set of users reviews the solutions and
+ranks them by code quality. Problem-submitting users get to see
+the ranked solutions, solution-submitting users get credits
+depending on the quality of the solution, and reviewers get
+credit based on the overlap between their ranking and the
+overall ranking of solutions. Software companies can pay to get
+the contacts of well-performing users (for targeted hiring).
+1/31/2023
+
+22
+
+Stakeholders
+
+TechStack Inc.
+
+Problem-submitter
+
+Software
+Development
+Companies
+
+User
+
+Solution-submitter
+
+Reviewer
+
+has interest in
+is a type of
+
+1/31/2023
+
+23
+
+Goal Modeling
+A goal is a prescriptive statement of intent, i.e., it describes an
+abstract property that a system must fulfill.
+Goal types:
+1. Usage Goals: Goals with immediate relevance for end users
+which serve as basis for inference of user requirements
+2. System Goals: Goals directed at system properties and
+capabilities (typically quality, i.e., non-functional
+3. Business Goals: All organization-specific (strategic) goals with
+relevance to the project
+1/31/2023
+
+24
+
+Goal Modeling
+For each of the following stakeholders in the previously
+mentioned scenario, identify one goal and classify it as a
+usage, system, or business goal.
+
+TechStack Inc.
+
+1/31/2023
+
+Solution-submitter
+
+25
+
+Goal Modeling
+
+1/31/2023
+
+Generate
+revenue (B)
+
+Protect private
+data (S)
+
+Contact skilled
+developers (U)
+
+TechStack Inc.
+
+User
+
+Software
+Development
+Companies
+
+Problem-submitter
+
+Solution-submitter
+
+Reviewer
+
+Receive help for
+coding tasks (U)
+
+Show skills on
+coding tasks (U)
+
+Show skills on
+review tasks (U)
+26
+
+Goal Refinement
+Goals can be further refined with the following relations:
+• Conflict: one goal may conflict with another goal
+• Support: one goal may support another goal
+• Refinement: one goal can be decomposed into more
+specific sub-goals
+
+1/31/2023
+
+27
+
+Goal Relationships
+Obtain sharable
+contact data (U)
+
+1/31/2023
+
+Generate
+revenue (B)
+
+Protect private
+data (S)
+
+Contact skilled
+developers (U)
+
+TechStack Inc.
+
+User
+
+Software
+Development
+Companies
+
+28
+
+Goal Refinement
+Solution-submitter
+Show skills on
+coding tasks (U)
+
+Receive merit on
+the platform (U)
+
+1/31/2023
+
+Receive merit
+outside of the
+platform (U)
+
+29
+
+System Vision
+A system vision is the transition point between the context
+specification and the requirements specification. Its main
+purpose is to
+• give a comprehensive overview of the most important
+use cases and
+• boundaries, thus it clearly defines the scope of the
+system. It clearly distinguishes which parts belong to the
+system and which parts are external.
+1/31/2023
+
+30
+
+System Vision
+Use Case Diagram procedure:
+1. Elicit concrete functionality necessary to enable the goal.
+2. Connect it to stakeholders that are involved with that
+use case.
+3. Determine, whether the use case is part of the system or
+external.
+
+1/31/2023
+
+31
+
+System Vision
+Step 1: Elicit concrete functionality necessary to enable the goal.
+Context Layer (why?)
+
+Requirements Layer (what?)
+get an overview
+over existing
+tasks
+
+Receive merit on
+the platform
+
+1/31/2023
+
+Submit solution
+to a task
+
+view task in a
+code editor
+Make rating of
+solution public
+32
+
+System Vision
+Step 2: Connect it to stakeholders that are involved with
+that use case.
+get an overview
+over existing
+tasks
+
+view task in a
+code editor
+Solution-submitter
+
+Submit solution
+to a task
+Make rating of
+solution public
+
+1/31/2023
+
+Problem-submitter
+
+Reviewer
+33
+
+System Vision
+Step 3: Determine, whether the use case is part of the
+system or external.
+System
+get an overview
+over existing tasks
+
+Solution-submitter
+External System
+view task in a
+code editor
+1/31/2023
+
+Submit solution to
+a task
+
+Problem-submitter
+
+Make rating of
+solution public
+
+Reviewer
+
+34
+
+Requirements Elicitation
+You can specify functional requirements using the following
+template:
+REQ<id>: When <stakeholder> <action>,
+then the system <reaction>.
+
+1/31/2023
+
+35
+
+Requirements Elicitation
+Refine features into measurable, specific requirements.
+Requirements Layer (what?)
+REQ1: When a user opens the
+challenge overview, the system
+visualizes all active challenges.
+get an overview
+over existing tasks
+
+REQ2: When the user hovers
+over a challenge name, the
+system shows a preview of the
+challenge description.
+REQ3: …
+
+1/31/2023
+
+36
+
+Requirements Elicitation for System
+Goals
+Approach 1: Decompose a system goal into measurable
+requirements along its aspects.
+The service
+should be safe
+
+REQ42: Any request
+sent from the server REQ43: Personal data
+shall be encrypted. shall be removable at
+any point in time.
+
+Approach 2: Specify a misuse-case, i.e., a functional
+requirement of what is not supposed to happen.
+The service shall
+ensure data
+privacy
+1/31/2023
+
+REQ44: When an unauthorized
+user accesses another user’s
+profile, the system shall not
+display any contact information.
+37
+
+Context Layer (why?)
+
+Requirements Engineering Template
+
+Goal
+Goal
+
+Goal
+Goal
+
+Requirements Layer (what?)
+
+System
+
+1/31/2023
+
+Feature
+
+Feature
+Feature
+Feature
+
+External
+
+External
+Feature
+
+REQ44: When an unauthorized
+user accesses another user’s
+REQ2: When the user
+profile, the system shall not
+hovers over a challenge
+name, the systemdisplay
+shows any
+a contact information.
+preview of the challenge
+description.
+
+38
+
+Beyond Requirements Engineering
+or: how to continue from requirements
+
+1/31/2023
+
+39
+
+System Layer
+(how?)
+
+Requirements Layer
+(what?)
+
+Using requirements
+
+1/31/2023
+
+System
+(black-box view)
+
+System
+(glass-box view)
+
+40
+
+Concluding thoughts
+
+Tailoring
+there is no one-sizefits-all solution
+
+1/31/2023
+
+Change
+requirements are
+rarely static
+
+Means-to-an-end
+Requirements are no
+means-to-itself
+
+41
+
+Further reading
+Méndez Fernández, D., & Penzenstadler, B. (2015). Artefact-based requirements
+engineering: the AMDiRE approach. Requirements Engineering, 20, 405-434.
+https://link.springer.com/article/10.1007/s00766-014-0206-y
+
+1/31/2023
+
+42
+
+PA1475
+
+Davide Fucci, Ph.D.
+dfu@bth.se
+@dfucci_
+
+1
+
+Qualityis a characteristic of thought and
+
+statement that is recognised by a non-thinking
+process. Because definitions are a product of
+rigid, formal thinking, quality cannot be defined
+… but even though quality cannot be defined,
+you know what quality is!
+
+3
+
+4
+
+Different views of Quality
+‣ Is it a bug or feature?
+‣ Internal vs. External quality
+‣ Usefulness
+‣ Dependable
+‣ Correctness
+‣ Reliability
+‣ Safety
+‣ Robustness
+
+5
+
+Software Errors, Faults, and Failures
+used by
+
+Requirements
+specification
+
+Developer
+develops
+
+can make
+
+ERROR
+may lead to
+may
+
+conta
+in
+
+determines
+
+Program
+produces
+
+FAULT
+
+are they the same?
+NO
+
+Desired
+behavior
+
+Observed
+behavior
+7 FAILURE
+
+Software Errors, Faults, and Failures
+INCIDENT
+
+Made by the developer
+ERROR
+
+Can cause improper functioning
+FAULT
+
+A fault which his activated
+FAILURE
+
+8
+
+Software Incidents
+
+9
+
+Software Incidents
+/r/softwaregore
+
+10
+
+Example: GMail
+Incident: Most Google users who tried to
+log-in in Gmail found they were unable to
+access for approximately 25 minutes.
+Failure: An incorrect configuration was
+sent to live services over 15 minutes and
+user requests were ignored.
+Fault: an internal system that generates
+configuration may generate an
+incorrect configuration.
+Error: The software developer of the
+configuration generator introduced
+a bug in the program.
+11
+
+Examples: Therac-25
+Incident: A patient died.
+Failure: the device applied frequency of
+radiations higher than a safety threshold.
+Fault: the software controller did not have a
+condition to check the frequency of the radiation.
+Error: The developer forgot to include a check
+on the frequency of the radiation to be applied.
+The device operator was NOT supposed to
+enter anything outside [1…10,000 Hz] range.
+
+12
+
+Examples: Arianne 5
+
+Incident: Rocket exploded soon after take-off.
+Failure: loss of aerodynamic triggered the
+Flight Termination System.
+Fault: a 64-bit to 16-bit integer
+conversion caused an overflow.
+Error: The developers reused code from the
+Arianne 4 take-off guidance module. Arianne 5
+acceleration is ~6x higher than Arianne 4.
+A range check for the acceleration was omitted.
+
+13
+
+Cost of failures
+Annoying
+
+Reputation
+
+Mission critical
+
+‣ “Finding and fixing a severe software problem after delivery is often
+100x more expensive than finding and fixing it during the
+requirements and design phase.”
+‣ “A significant percentage of the effort on current software projects is typically
+spent on avoidable rework.”
+‣ “Most of the avoidable rework comes from a small number of defects.”
+
+Expensive
+
+‣ “Reviews catch more than 50% of a product’s defects regardless of
+the domain, level of maturity of the organization, or lifecycle phase
+during which they were applied.”
+
+Safety critical
+
+‣ More than 50% of all software enter use with defects that affect execution.”
+15
+
+F. Shull, V. Basili, B. Boehm, A. W. Brown, P. Costa, M. Lindvall, D. Port, I. Rus, R. Tesoriero, M. Zelkowitz, “What We Have Learned About Fighting Defects”, METRICS 2002
+
+Software Quality Assurance practices
+Code reviews
+
+Walkthroughs
+
+Inspections
+
+What is software testing?
+
+Testing
+
+Automated prediction
+
+16
+
+Software Quality Assurance practices
+Code reviews
+
+Walkthroughs
+
+Inspections
+
+Testing
+
+Automated prediction
+
+‣ "Testing is the process of executing a program with intention of finding
+errors.” (Myers)
+‣ “The process of operating a system or component under specified
+conditions, observing or recording the results, and making an evaluation
+of some aspect of the system or component.” (IEEE Standard 610.12)
+‣ “The process of analyzing a software item to detect the differences
+between existing and required conditions and to evaluate the features of
+the software item.” (IEEE Standard 610.12)
+‣ “Software testing is a formal process carried out by a specialized testing
+team in which a software unit, several integrated software units or an
+entire software package are examined by running the programs on a
+computer. All the associated tests are performed according to approved
+test procedures on approved test cases.” (Galin)
+17
+
+Find the keyword
+‣ "Testing is the process of executing a program with intention of finding errors.” (Myers)
+‣ “The process of operating a system or component under specified conditions,
+observing or recording the results, and making an evaluation of some aspect of the system
+or component.” (IEEE 610.12)
+‣ “The process of analyzing a software item to detect the differences between existing and
+required conditions and to evaluate the features of the software item.” (IEEE 610.12)
+‣ “Software testing is a formal process carried out by a specialized testing team in which a
+software unit, several integrated software units or an entire software package are examined
+by running the programs on a computer. All the associated tests are performed
+according to approved test procedures on approved test cases.” (Galin)
+21
+
+Testing Objectives
+
+To find faults before they cause a
+production system to fail.
+
+To perform the required tests efficiently
+and effectively, within the budgetary limits
+and scheduling limitation.
+
+To bring the tested software, after
+correction of the identified faults and retesting, to an acceptable level of quality.
+
+To compile a record of software errors for
+use in error prevention (by corrective and
+preventive actions).
+22
+
+Validation&Verification
+
+Actual
+requirements
+
+SW
+specs
+
+SW
+system
+
+V V
+
+alidation
+The process of evaluating software
+to ensure compliance with
+intended usage.
+
+23
+
+erification
+The process of determining whether
+the product fulfil the specifications.
+
+Validation&Verification
+
+V
+V
+
+erification: The process of
+determining whether the
+product fulfil the specifications.
+
+if a user presses a
+request button at
+floor i, an available
+elevator must arrive
+at floor i soon
+
+alidation: The process of evaluating
+software to ensure compliance with
+intended usage.
+24
+
+Validation&Verification
+
+V
+V
+
+erification: The process of
+determining whether the
+product fulfil the specifications.
+
+if a user presses a
+request button at
+floor i, an available
+elevator must arrive
+at floor i soon in 7 sec
+
+alidation: The process of evaluating
+software to ensure compliance with
+intended usage.
+25
+
+Challenges
+
+Exhaustive testing
+
+class sum {
+int sum(int a, int b) {return a+b}
+}
+26
+
+Challenges
+main(){
+int z = 0;
+while (1 != 0){
+z = z + 1;
+}
+}
+27
+
+Halting problem
+
+Rolling Stones principle™
+Property
+Decision procedure
+
+Pass/fail
+
+Program
+
+ever
+You can’t always get
+
+what you want
+
+“Program testing can be used to
+show the presence of bugs, but
+never to show their absence!”
+28
+
+Pezzè & Young (2007) Software Testing and Analysis
+
+Heuristics is what we need
+Perfect verification of arbitrary
+properties by exhaustive testing
+
+Optimistic inaccuracy: we may accept some programs
+that do not possess the property (i.e., it may not detect all violations).
+– testing
+
+Theorem proving
+
+Pessimistic inaccuracy: we may not accept a program even if it does
+possess the property.
+– automated program analysis techniques
+
+Model checking
+
+Simplified properties: reduce properties degree of freedom.
+
+Data flow
+analysis
+Precise analysis of very
+simple syntactic properties
+
+Properties
+
+SIM
+P
+
+LIFI
+
+CAT
+
+Typical testing techniques
+
+ION
+
+INA
+Pessimistic
+
+Y
+C
+A
+R
+U
+C
+C
+
+Optimistic
+
+29
+
+Pezzè & Young (2007) Software Testing and Analysis
+
+Types of testing
+Black box vs. White box
+
+Unit testing
+Integration testing
+
+Functional vs. Non-functional
+
+System testing
+
+Static vs. Dynamic
+
+Acceptance testing
+Regression testing
+A/B testing
+
+30
+
+V
+V Model
+
+Requirements design
+
+Acceptance testing
+
+Regression testing
+
+System design
+
+System testing
+
+Architecture design
+
+Integration testing
+
+Module design
+
+Unit testing
+
+31
+
+Unit testing
+
+Developer
+
+Test internal behaviour of individual
+units against design specifications.
+‣White-box
+‣Functional (mostly)
+
+32
+
+What the hell
+is a unit?
+
+Unit test: how do they look like?
+
+https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks
+
+33
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+def push(self, item):
+self.items.append(item)
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+34
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+
+import unittest
+class StackTester(unittest.TestCase):
+// test cases go here
+if __name__ == '__main__':
+unittest.main()
+
+def push(self, item):
+self.items.append(item)
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+35
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+def push(self, item):
+self.items.append(item)
+
+import unittest
+class StackTester(unittest.TestCase):
+def test_stack_init(self):
+s = Stack()
+self.assertEqual(0, s.size())
+if __name__ == '__main__':
+unittest.main()
+
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+36
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+
+import unittest
+class StackTester(unittest.TestCase):
+def test_stack_init(self):
+s = Stack()
+self.assertEqual(0, s.size())
+
+def push(self, item):
+self.items.append(item)
+
+def test_push1_size(self):
+item = 42
+s = Stack() Arrange
+s.push(item)
+size = s.size()
+self.assertEqual(1, size)
+
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+if __name__ == '__main__':
+unittest.main()
+37
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+
+import unittest
+class StackTester(unittest.TestCase):
+def test_stack_init(self):
+s = Stack()
+self.assertEqual(0, s.size())
+
+def push(self, item):
+self.items.append(item)
+
+def test_push1_size(self):
+item = 5
+s = Stack()
+s.push(item)
+size = s.size() Act
+self.assertEqual(1, size)
+
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+if __name__ == '__main__':
+unittest.main()
+38
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+
+import unittest
+class StackTester(unittest.TestCase):
+def test_stack_init(self):
+s = Stack()
+self.assertEqual(0, s.size())
+
+def push(self, item):
+self.items.append(item)
+
+def test_push1_size(self):
+item = 5
+s = Stack()
+s.push(item)
+size = s.size()
+self.assertEqual(1, size)
+
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+if __name__ == '__main__':
+unittest.main()
+39
+
+Assert
+
+AAA test case example
+class Stack:
+def __init__(self):
+self.items = []
+def isEmpty(self):
+return self.items == []
+def push(self, item):
+self.items.append(item)
+
+def test_pop_empty(self):
+s = Stack()
+self.assertRaises(IndexError, s.pop())
+
+def pop(self):
+return self.items.pop()
+def size(self):
+return len(self.items)
+
+40
+
+A software tester walks into a bar.
+Orders a beer.
+Orders 0 beers.
+Orders 999999999 beers.
+Orders a lizard.
+Orders -1 beers.
+Orders a sfdeljknesv.
+42
+
+Integration testing
+
+We already have unit tests.
+Why do we need this?
+
+To test interactions between
+modules based on design and
+interface specifications.
+
+‣ Stubs and drivers may be needed
+
+43
+
+System testing
+
+We already have integration tests.
+Why do we need this?
+
+Verification of the completed system
+functionality against specifications.
+‣
+‣
+‣
+‣
+
+44
+
+Functional
+Non-functional
+Black Box
+No stubs or drivers
+
+Testing strategies
+
+Big Bang
+‣
+‣
+‣
+‣
+
+Incremental
+‣ Test as soon as modules are available
+‣ Earlier detection prevents later mitigation
+‣ Redundancy vs. resources
+
+Test only after everything is available
+Difficult to scale up
+Low detection rate
+Difficult root-cause analysis
+
+45
+
+Incremental top-down
+Integration D
+Integration C
+Integration B
+Integration A
+
+Stage 1: Unit tests of M11
+
+M11
+
+Stage 2: Integration test A of M11 integrated with M9 and M10
+M9
+
+Stage 3: Integration test B of A integrated with M8
+Stage 4: Integration test C of B integrated with M6 and M7
+
+M10
+
+M8
+
+Stage 5: Integration test D of C integrated with M1 and M2
+Stage 6: System test of D integrated with M3, M4, and M5
+M1
+
+M6
+
+M7
+
+M4
+
+M5
+
+M2
+M3
+
+46
+Galin D., ”Software Quality Assurance: From theory to implementation”, Addison-Wesley, 2004
+
+Incremental bottom-up
+M11
+
+Stage 1: Unit tests of M1 to M7
+Stage 2: Integration test A of M1 and
+M2 with M8
+Stage 3: Two separate integration tests
+1. Integration B on M3, M4, M5,
+and M8 integrated with M9.
+2. Integration C for M6 and M7,
+integrated with M10.
+
+Integration C
+
+Integration B
+
+M10
+
+M9
+Integration A
+
+M8
+
+M1
+
+M2
+
+M3
+
+M4
+
+M5
+
+M6
+
+M7
+
+Stage 4: System test is performed after
+B and C have been integrated with M11
+
+47
+Galin D., ”Software Quality Assurance: From theory to implementation”, Addison-Wesley, 2004
+
+Stubs and drivers
+Driver: a dummy replacement of
+an actual module that depends on
+the current module under test.
+
+Stub: a dummy replacement of an
+actual module that the current
+module under test depends on.
+
+Stub M1
+
+M9
+
+Driver M9
+
+M8
+
+M8
+
+M1
+
+Stub M2
+
+M2
+
+48
+Galin D., ”Software Quality Assurance: From theory to implementation”, Addison-Wesley, 2004
+
+Acceptance testing
+
+We already have system tests.
+Why do we need this?
+
+Validation of the system against actual needs
+‣
+‣
+‣
+‣
+
+Functional
+Non-functional
+Black Box
+No stubs or drivers
+
+Performed by the customer
+
+‣ α test: environment controlled by the vendor
+‣ β test: real settings of customer
+
+49
+
+Regression testing
+
+Enough tests already!
+Why do we need this?
+
+Recheck all test cases that passed previously
+Caution against unintended changes
+‣
+‣
+‣
+‣
+
+Run as frequently as possible
+Initial feasibility for a new feature
+Backward compatibility
+Selection of cases
+
+50
+
+54
+
+Sources and further readings
+Books
+Chapters 1-4: Pezze M.,Young M., “Software Testing and Analysis: Process, Principles and Techniques”, John Wiley & Sons, 2020
+Chapters 1.1 and 1.18: A. P. Mathur, “Foundations of Software Testing”, Prentice Hall, 2008
+Chapter 1: Paul Ammann, Jeff Offutt, "Introduction to Software Testing", Cambridge University Press, 2008
+Chapter 9: Galin D., ”Software Quality Assurance: From theory to implementation”, Addison-Wesley, 2004
+Brooks, F. P., The Mythical Man-Month, Anniversary edition, Addison-Wesley, 1995
+Articles
+R. N. Charette, “Why Software Fails”, IEEE Spectrum, September 2005
+F. Shull et al. “What We Have Learned About Fighting Defects”, METRICS 2002
+Harrold, M., “Testing: a roadmap”, Proc. of the Conference on the Future of Software Engineering, pp. 61– 72, 2000
+J. Laurenz Eveleens, Chris Verhoef, “The Rise and Fall of the Chaos Report Figures”, IEEE Software, Jan/Feb 2010
+
+62
+
+Software Development
+Plan-Driven Software Development
+
+In a nutshell: What is Plan-Software Development?
+🁢 Plan-Driven / Plan-Based development is a development model where
+🁢
+🁢
+🁢
+
+the development is planned in detail
+Based on Engineering Project Management Techniques
+Often referred as the “traditional” way of managing software projects
+A project plan is created to record what we will do, who will do it,
+when (with a schedule), and the work products
+
+What is a project plan?
+🁢 A project plan is a document that describes the resources, and the
+🁢
+
+work breakdown, and the schedule to carry out the work
+It usually contains the following sections
+🁢 Introduction
+🁢 Project organization
+🁢 Risk analysis
+🁢 Hardware and software requirements
+🁢 Work breakdown
+🁢 Project schedule
+🁢 Monitoring and reporting mechanisms
+
+3
+
+Project plan – It can be as detailed as you want
+🁢
+
+Title Page
+
+🁢
+
+5 Managerial Process Plans
+
+§
+
+6 Technical Process Plans
+
+🁢
+
+Signature Page
+
+🁢
+
+5.1 Start - up Plan
+
+§
+
+6.1 Process Model
+
+🁢
+
+Change History
+
+🁢
+
+5.1.1 Estimation Plan
+
+§
+
+6.2 Methods, Tools, and Techniques
+
+🁢
+
+Preface
+
+🁢
+
+5.1.2 Staffing Plan
+
+§
+
+6.3 Infrastructure Plan
+
+🁢
+
+Table of Contents
+
+🁢
+
+5.1.3 Resource Acquisition Plan
+
+§
+
+6.4 Product Acceptance Plan
+
+🁢
+
+List of Figures
+
+🁢
+
+5.1.4 Project Staff Training Plan
+
+§
+
+7 Supporting Process Plans
+
+🁢
+
+List of Tables
+
+🁢
+
+5.2 Work Plan
+
+§
+
+7.1 Configuration Management Plan
+
+🁢
+
+1 Overview
+
+🁢
+
+5.2.1 Work Activities
+
+§
+
+7.2 Verification and Validation Plan
+
+🁢
+
+1.1 Project Summary
+
+🁢
+
+5.2.2 Schedule Allocation
+
+§
+
+7.3 Documentation Plan
+
+🁢
+
+1.1.1 Purpose, Scope, and Objectives
+
+🁢
+
+5.2.3 Resource Allocation
+
+§
+
+7.4 Quality Assurance Plan
+
+🁢
+
+1.1.2 Assumptions and Constraints
+
+🁢
+
+5.2.4 Budget Allocation
+
+§
+
+7.5 Reviews and Audits
+
+🁢
+
+1.1.3 Project Deliverables
+
+🁢
+
+5.3 Control Plan
+
+§
+
+7.6 Problem Resolution Plan
+
+🁢
+
+1.1.4 Schedule and Budget Summary
+
+🁢
+
+5.3.1 Requirements Control Plan
+
+§
+
+7.7 Subcontractor Management Plan
+
+🁢
+
+1.2 Evolution of the Plan
+
+🁢
+
+5.3.2 Schedule Control Plan
+
+§
+
+7.8 Process Improvement Plan
+
+🁢
+
+2 References
+
+🁢
+
+5.3.3 Budget Control Plan
+
+§
+
+8 Additional Plans
+
+🁢
+
+3 Definitions
+
+🁢
+
+5.3.4 Quality Control Plan
+
+§
+
+Annexes
+
+🁢
+
+4 Project Organization
+
+🁢
+
+5.3.5 Reporting Plan
+
+🁢
+
+4.1 External Interfaces
+
+🁢
+
+5.3.6 Metrics Collection Plan
+
+🁢
+
+4.2 Internal Structure
+
+🁢
+
+5.4 Risk Management Plan
+
+🁢
+
+4.3 Roles and Responsibilities
+
+🁢
+
+5.5 Closeout Plan
+
+The Planning Process
+«system»
+Project planner
+Identify
+constraints
+Identify
+risks
+Define
+milestones
+and
+deliverables
+
+[unfinished]
+
+[project
+finished]
+
+Do the work
+Define project
+schedule
+
+[ no problems ]
+Monitor progress
+against plan
+
+[minor problems and slippages]
+
+Initiate risk
+mitigation actions
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+[serious
+problems]
+
+Replan
+project
+5
+
+The Planning Process
+[unfinished]
+
+«system»
+Project planner
+Identify
+constraints
+Identify
+risks
+Define
+milestones
+and
+deliverables
+
+[project
+finished]
+
+Do the work
+Define project
+schedule
+
+[ no problems ]
+Monitor progress
+against plan
+
+[minor problems and slippages]
+
+Today’s lecture focuses on
+this part…
+
+Initiate risk
+mitigation actions
+
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+[serious
+problems]
+
+Replan
+project
+6
+
+Traditional Planning
+Project Planning and Schedule
+
+7
+
+Is more than just the requirements
+🁢 Example – preparing a chicken sandwich
+🁢 How long it can take?
+
+🁢 Try to discuss 2 minutes 2-3 persons: ….?
+
+What were your assumptions?
+
+10
+
+Project Planning
+🁢 Project planning involves:
+🁢 Breaking down the work into parts (to create the Work Breakdown Structure
+🁢
+🁢
+
+or WBS)
+Assign these parts to people (teams or team members depending on the level
+we are planning)
+e
+Identify potential risks (problems) that might arise and the potential solutions
+ectur
+e
+Teas
+
+r
+
+ext
+n
+e
+h
+for t
+
+l
+
+11
+
+Hang on a minute… WBS? What?
+🁢 Work Breakdown Structure (WBS)
+🁢
+🁢
+🁢
+🁢
+🁢
+
+Is a structural decomposition of the work tasks for a project.
+Describes the required steps (or activities) to carry out the project
+Details functions and activities within the system in their smaller parts.
+Shows relations between activities in the WBS.
+It is hard to estimate the full task, smaller parts easier to estimate.
+
+🁢 Lets try an example….
+
+What is not only the requirements
+🁢 Connecting them to the estimations
+🁢
+🁢
+🁢
+🁢
+
+🁢 Through the work breakdown structure (WBS)
+It is hard to estimate the full task, smaller parts easier to estimate.
+By doing the WBS, you also see the dependencies between activities.
+The WBS and the tasks dependencies will help us to schedule the
+project
+Resource allocation
+
+Uncertainty in Estimation
+
+WBS Example: Group Registration Tool for MalarDuk
+🁢 Group Registration Tool
+🁢 Main requirements
+
+Allow students to register in groups
+Set deadline
+Show a summary for students (in which group you are or if you have to still do it)
+Prevent the same student from registering in multiple groups
+Teachers can define the max number of students per group, and the system adjusts
+automatically
+🁢 Students see in MalarDuk that they have not registered
+🁢 Show summary for teachers
+🁢 Attractive and simple to use UI
+
+🁢
+🁢
+🁢
+🁢
+🁢
+
+🁢 What are the activities that we are doing?
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+UI Student
+
+UI Teacher
+
+Construct
+logic
+
+Build Groups
+database
+
+Mail
+reminders
+
+Fetch Course
+Participants
+
+WBS Example
+MalarDuk:
+Group
+Registration
+
+Design UI
+
+Develop UI
+
+UI
+Student
+
+UI Teacher
+
+Test UI
+
+Release UI
+
+Unit Test UI
+
+Construct logic
+
+Build Groups
+database
+
+Mail
+reminders
+
+Fetch Course
+Participants
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+Design UI
+
+UI
+
+UI
+
+Student
+
+Teacher
+
+Construct
+logic
+
+Test UI
+
+Release UI
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Develop UI
+
+Unit Test UI
+
+Build database
+
+Mail
+Reminders
+
+Fetch Course
+Participants
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+Design UI
+
+UI
+
+UI
+
+Student
+
+Teacher
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Architecture
+
+Construct
+logic
+
+Build database
+
+Implement
+
+Test
+
+Mail
+Reminders
+
+Fetch Course
+Participants
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+UI
+Student
+
+Design UI
+
+Develop UI
+
+Test UI
+
+UI
+Teacher
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Develop UI
+
+Test UI
+
+Construct
+logic
+
+Release UI
+
+Unit Test UI
+
+Architecture
+
+Implement
+
+Test
+
+Design DB
+
+Build
+database
+
+Mail
+Reminders
+
+Create DB
+
+Test DB
+
+Fetch Course
+Participants
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+UI
+Student
+
+Design UI
+
+Develop UI
+
+Test UI
+
+UI
+Teacher
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Develop UI
+
+Test UI
+
+Construct
+logic
+
+Release UI
+
+Unit Test UI
+
+Architecture
+
+Implement
+
+Test
+
+Design DB
+
+Build
+database
+
+Mail
+Reminders
+
+Create DB
+
+Test DB
+
+Fetch Course
+Participants
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+UI
+Student
+
+Design UI
+
+Develop UI
+
+Test UI
+
+UI
+Teacher
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Develop UI
+
+Test UI
+
+Construct
+logic
+
+Release UI
+
+Unit Test UI
+
+Architecture
+
+Implement
+
+Build
+database
+
+Test
+
+Design DB
+
+Create DB
+
+Mail
+Reminders
+
+Test DB
+
+Acquire SMTP
+Access
+
+Fetch Course
+Participants
+
+Build Security
+Layer
+
+WBS Example
+
+MalarDuk:
+Group
+Registration
+
+Design UI
+
+UI
+
+UI
+
+Student
+
+Teacher
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Construct logic
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Architecture
+
+Implement
+
+Build database
+
+Test
+
+Design DB
+
+Create DB
+
+Mail Reminders
+
+Test DB
+
+Acquire SMTP
+Access
+
+Build Security
+Layer
+
+Fetch Course
+Participants
+
+Integration with
+LADOK
+
+WBS Example
+🁢 Still possible to further work with break down…
+🁢 But, is it valuable?
+🁢
+
+Will the continued decomposition add some valuable information or is it sufficiently
+comprehensible.
+
+🁢 Mission:
+🁢 Support estimation
+🁢 Support further planning of the project
+
+WBS Example
+What would you say the
+system would cost based on
+information on this level…
+MalarDuk:
+Group
+Registration
+
+Design UI
+
+UI
+
+UI
+
+Student
+
+Teacher
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Unit Test UI
+
+Design UI
+
+Construct logic
+
+Test UI
+
+Develop UI
+
+Release UI
+
+Architecture
+
+Implement
+
+Build database
+
+Test
+
+Design DB
+
+Create DB
+
+Mail Reminders
+
+Test DB
+
+Acquire SMTP
+Access
+
+Build Security
+Layer
+
+Fetch Course
+Participants
+
+Integration with
+LADOK
+
+Unit Test UI
+
+Tasks on the bottom are
+easier to estimate
+
+Summing up your estimates
+on this level will differ from
+the top level…
+
+WBS Value
+Trust in Estimates
+
+High
+
+Low
+WBS abstraction
+
+Top
+
+Bottom
+27
+
+Estimation
+🁢 Several ways to estimate
+🁢
+🁢
+🁢
+🁢
+
+Algorithmic (COCOMO)
+Analogical models (Angel)
+Consensus
+Agile Techniques (although some of them are also analogical)
+
+28
+
+Estimation in a Nutshell
+🁢 Estimation need to estimate effort and costs
+🁢 We can do it several ways
+🁢 Experience based techniques
+
+🁢
+
+🁢 analogical models like Angel,
+🁢 Agile Techniques
+🁢 Consesus (agile also involves consensus
+Algorythmic cost modelling techniques
+🁢 COCOMO
+🁢 IFPUG function points
+🁢 Cosmic
+
+29
+
+Experience Based Approaches: How
+🁢 We estimate based on our experience of past projects and the effort
+🁢
+🁢
+🁢
+
+and cost we spent on them
+We identify deliverables and components (parts of the system)
+We estimate them individually, by comparing them with our past
+experiences
+Doing group estimates tend to improve the reliability of the estimates
+
+30
+
+Experience Based Approaches: Cons
+🁢 Software projects are never equal
+🁢 We tend to change a lot in terms of technology and we tend to
+🁢
+
+introduce new technologies we are unfamiliar with
+Previous experience will not help with them
+
+31
+
+Experience Based Approaches: How
+🁢 We estimate based on our experience of past projects and the effort
+🁢
+🁢
+🁢
+
+and cost we spent on them
+We identify deliverables and components (parts of the system)
+We estimate them individually, by comparing them with our past
+experiences
+Doing group estimates tend to improve the reliability of the estimates
+
+32
+
+Algothmic Cost Modelling: How (1)
+🁢 The cost or effort is approximated by a mathematical function
+𝑒𝑓𝑓𝑜𝑟𝑡 = 𝐴 × 𝑆𝑖𝑧𝑒 ! × 𝑀
+
+A is organizational (for example team) dependent constant
+B is the disproportionate effort for large projects
+M is a multiplier reflecting product, process and people attributes
+
+🁢 But, for calculating cost we tend to use code size
+🁢 And how do we know size????
+33
+
+Algothmic Cost Modelling: Cons
+🁢 How do we know code size????
+🁢 This we will only know when we are done
+🁢 Of course as the development progresses the size estimate becomes
+🁢
+
+more accurate
+Do you remember this?
+
+34
+
+Algothmic Cost Modelling: How (2)
+🁢 Algorithmic cost models are a systematic way to estimate effort to
+🁢
+
+develop a system or component
+There are many attributes and uncertainty in those esitmations
+
+35
+
+COCOMO cost modelling
+🁢 COCOMO is an empirical (based on reality) model based on project
+🁢
+🁢
+
+experience
+Well documented model with long history
+COCOMO 2 takes into account even different development
+approaches
+
+36
+
+COCOMO Estimation Models
+Number of
+application points
+
+Based on
+
+Number of function
+points
+
+Based on
+
+Number of lines of
+code reused or
+generated
+
+Based on
+
+Number of lines of
+source code
+
+Based on
+
+Application
+composition model
+
+Early design model
+
+Reuse model
+
+Post-architecture
+model
+
+Used for
+
+Used for
+
+Systems developed
+using dynamic
+languages, DB
+programming etc.
+
+Initial effort
+estimation based on
+system requirements
+and design options
+
+Used for
+
+Effort to integrate
+reusable components
+or automatically
+generated code
+
+Used for
+
+Development effort
+based on system
+design specification
+
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+37
+
+COCOMO: Application Composition Model
+🁢 Estimation for prototyping projects with massive reuse
+🁢 Based on standard estimates of developer productivity in application
+points / month
+
+🁢 𝑃𝑒𝑟𝑠𝑜𝑛𝑠𝑀𝑜𝑛𝑡ℎ =
+Developer’s
+experience
+and capability
+
+##$$%&'()&*+ ,*&+)- × /0
+
+%"#$%#
+&''
+
+,1*23')&4&)5
+
+Very low
+
+Low
+
+Nominal
+
+High
+
+Very high
+
+ICASE maturity Very low
+and capability
+
+Low
+
+Nominal
+
+High
+
+Very high
+
+PROD
+(NAP/month)
+
+7
+
+13
+
+25
+
+50
+
+4
+
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+38
+
+COCOMO: Multipliers
+🁢 Multipliers are the capability of the developers, non-functional
+
+requirements, the familiarity with the development platform, etc.
+🁢 RCPX - product reliability and complexity;
+🁢 RUSE - the reuse required;
+🁢 PDIF - platform difficulty;
+🁢 PREX - personnel experience;
+🁢 PERS - personnel capability;
+🁢 SCED - required schedule;
+🁢 FCIL - the team support facilities.
+
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+39
+
+COCOMO: Early Design Model
+🁢 We can apply it after the requirements have been set
+🁢 Based on standard algorythmic formula
+𝑒𝑓𝑓𝑜𝑟𝑡 = 𝐴 × 𝑆𝑖𝑧𝑒 ! × 𝑀
+
+🁢
+🁢
+🁢
+🁢
+
+M = PERS ´ RCPX ´ RUSE ´ PDIF ´ PREX ´ FCIL ´ SCED;
+A = 2.94 in initial calibration,
+Size in KLOC,
+B varies from 1.1 to 1.24 depending on novelty of the project, development
+flexibility, risk management approaches and the process maturity.
+
+(c) Ian Sommerville: Suplementary materials to Sommerville, I An Introduction to Modern Software Engineering.
+
+40
+
+What is next: Defining Tasks, Durations and Dependencies
+
+41
+
+How long it will take to carry out the tasks?
+🁢 One way to calculate the length and schedule of a project is throught
+Critical Path
+
+Plan Driven Planning
+Critical Path
+
+Javier Gonzalez Huerta
+
+What is it?
+🁢 Critical Path is the chain of
+
+activities with longest duration
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+44
+
+Critical Path Calculation
+🁢 We use the schedule network that considers the precedence
+relationships between tasks
+
+45
+
+How long it takes?
+🁢 Try to discuss 5 minutes 2-3 persons: ….?
+Duration=15
+
+Duration=5
+
+F
+Duration=10
+
+Duration=20
+
+A
+
+B
+
+G
+Duration=5
+
+C
+Duration=15
+
+H
+
+Duration=10
+
+Duration=20
+
+D
+
+E
+
+Critical Path Calculation: Schedule Network?
+Duration=15
+
+Duration=5
+
+F
+Duration=10
+
+Duration=20
+
+A
+
+B
+
+G
+Duration=5
+
+C
+
+Duration=10
+
+Duration=20
+
+D
+
+E
+
+Duration=15
+
+H
+47
+
+Critical Path Calculation: Activities in a Schedule Network
+
+Earliest Finish
+
+Earliest Start
+Duration
+
+ES
+LS
+Latest Start
+
+A
+
+EF
+LF
+Latest Finish
+
+Critical Path Calculation
+🁢 We use the schedule network that considers the precedence
+🁢
+🁢
+🁢
+
+relationships between tasks
+The Critical Path is the path/s in the network that has the longest
+duration
+We can define it also as the path/s containing the activities with
+slack=0
+What is slack? I will define that later…
+
+49
+
+Critical Path:
+Duration=15
+
+Duration=5
+
+F
+Duration=10
+
+Duration=20
+
+A
+
+B
+
+G
+Duration=5
+
+C
+
+Duration=10
+
+Duration=20
+
+D
+
+E
+
+Duration=15
+
+H
+50
+
+Why is it important?
+🁢 The critical path tells us the tasks we have to monitor
+🁢 If a task in the critical path is delayed, the whole project will delay
+🁢 Unless we do something in other tasks to compensate
+🁢 Tasks not belonging to the Critical Path can be delayed (to the extent
+to their slack
+
+o
+e
+d
+i
+V
+l
+a
+n
+o
+i
+t
+i
+A dd
+e
+l
+b
+a
+l
+i
+Ava
+51
+
+Gantt Representation
+
+o
+e
+d
+i
+V
+l
+a
+n
+o
+i
+t
+i
+A dd
+e
+l
+b
+a
+l
+i
+Ava
+52
+
+Plan Driven Planning
+Critical Path
+
+Javier Gonzalez Huerta
+
+Recourse Allocation Graph
+Activity Week 1
+and staff
+
+Week 2
+
+Week 3
+
+Week 4
+
+Week 5
+
+Week 6
+
+Week 7
+
+Week 8
+
+Week 9
+
+4
+
+4
+
+4
+
+4
+
+A 1 (2)
+A 2 (1)
+A 3 (3)
+A 4 (1)
+A 5 (4)
+A 6 (2)
+A 7 (2)
+Resoure
+
+2
+
+3
+
+o
+e
+d
+i
+V
+l
+a
+n
+o
+i
+t
+i
+A dd
+e
+l
+b
+a
+l
+i
+Ava
+4
+
+4
+
+4
+
+54
+
+Discussion
+Reflection
+🁢 Try to discuss 5 minutes 2-3 persons: ….?
+
+WHAT IS THE MAIN PROBLEM
+OF PLAN-DRIVEN?
+
+AND THEN?
+CAN WE STILL USE IT?
+
+55
+
+What is the problem with Plan-Driven?
+🁢 What is the problem?
+🁢 The problem is that early decisions should be revised due to changes on the
+
+environment, the product itself, the developing environment, or the customer
+
+🁢 And then?
+🁢 Plan-driven is not wrong, with a proper mixture of agility can work perfectly
+🁢 Some projects might require some upfront planning, and then combine with a
+🁢
+
+certain degree of agility
+Safety critical or security-critical systems suit better to a plan driven strategy
+
+Software Development
+Plan-Driven Software Development
+
+Software Development
+Risk Management
+
+“You miss 100% of the shoots you never take”
+Wayne Gretzky
+
+“I've missed more than
+9000 shots in my career.
+I've lost almost 300
+games. 26 times, I've been
+trusted to take the game
+winning shot and missed.
+I've failed over and over
+and over again in my life.
+And that is why I succeed.”
+― Michael jordan
+
+Risk Management
+
+What is it?
+Why Bother?
+
+Risk Management: Why bother?
+🁢 Risk management is concerned with identifying risks and minimize their
+
+effect on a project.
+🁢 You have to anticipate risks, understand the impact of these risks on the
+project, the product and the business, and take steps to avoid these risks.
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+6
+
+Risk Management: Why bother?
+🁢 It is not purely a creative process; it is a structured process with
+🁢
+🁢
+
+creative influences.
+Important to have different viewpoints!
+Experience and history is vital
+
+Risk Management
+
+Why is important
+in Software
+Projects?
+
+8
+
+Why is so important in software projects?
+🁢 Software is intangible
+🁢 Software projects are usually
+🁢
+
+one-of
+Software processes are variable
+and organization-specific
+🁢 There is no one-size-fits-all
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+9
+
+All Is Risk Management
+Avoid doing the wrong thing?
+
+Do proper requirements engineering
+
+Avoid delivering to late?
+
+Do project planning…
+
+Avoid spending too much money?
+
+Do project planning…
+
+Avoid delivering something that does not work?
+
+Do test planning and testing..
+
+Avoid building something that is hard to maintain?
+
+Do architecture and design using solid patterns and
+models…
+
+Avoid buying parts that do not hold quality or will continue to
+work?
+
+Do a technical assessment and due diligence before
+selecting a part(ner)
+10
+
+Risk Classification
+There are two dimensions of risk classification
+
+🁢 The type of risk
+🁢
+🁢
+🁢
+🁢
+🁢
+🁢
+
+Technical / Product
+Project risks
+Organizational
+Managerial
+Business
+Customer relations
+
+🁢 What is affected by the risk…
+🁢 Project risks affect schedule or
+🁢
+🁢
+
+resources;
+Product risks affect the quality or
+performance of the software
+being developed;
+Business risks affect the
+organization developing or
+procuring the software.
+
+11
+
+Risk Classification – another point of view
+🁢 Known Knowns
+
+🁢 Risks that we know is a risk, have accepted or mitigated.
+🁢 Known Unknowns
+🁢 We know about the type risk, but we are not sure that this risk is part of this project.
+e.g. not having access to well initiated end-users, thus perhaps not have the
+complete requirements.
+
+🁢 Unknown Unknowns
+
+🁢 Risks that we are not aware of and that we do not know that can be a risk.
+🁢 Things that we are currently not aware of…
+🁢 Unknown known
+🁢 very rare.
+🁢 risks an organization is aware of but is disregarding them, either intentionally or
+🁢
+
+unintentionally.
+Unknown knowns are not acceptable from a risk management perspective – if a risk
+is known, everything must be done to manage it.
+
+The Risk Management Process
+
+13
+
+The Risk Management Process
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+14
+
+The Risk Management Process
+
+15
+
+Risk Identification
+🁢 May be a team activities or
+🁢
+
+based on the individual project
+manager’s experience.
+A checklist of common risks
+may be used to identify risks in
+a project
+🁢 Technology risks.
+🁢 Organizational risks.
+🁢 People risks.
+🁢 Requirements risks.
+🁢 Estimation risks.
+🁢 Contractual risks.
+🁢 …
+16
+
+Examples of Risks
+Risk type
+
+Possible risks
+
+Estimation
+
+The time required to develop the software is underestimated.
+The rate of defect repair is underestimated.
+The size of the software is underestimated.
+
+Organizational
+
+The organization is restructured so that different management are responsible for the
+project.
+Organizational financial problems force reductions in the project budget.
+
+People
+
+It is impossible to recruit staff with the skills required.
+Key staff are ill and unavailable at critical times.
+Required training for staff is not available.
+
+Requirements
+
+Changes to requirements that require major design rework are proposed.
+Customers fail to understand the impact of requirements changes.
+
+Technology
+
+The database used in the system cannot process as many transactions per second as
+expected.
+Reusable software components contain defects that mean they cannot be reused as
+planned.
+
+Tools
+
+The code generated by software code generation tools is inefficient.
+Software tools cannot work together in an integrated way.
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+17
+
+Risk Analysis
+🁢 Assess probability and
+🁢
+🁢
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+seriousness of each risk.
+Probability may be very low,
+low, moderate, high or very
+high.
+Risk consequences might be
+catastrophic, serious, tolerable
+or insignificant.
+
+18
+
+Risk examples
+Risk
+
+Probability Effects
+
+Organizational financial problems force reductions in the project 1
+budget
+
+5
+
+It is impossible to recruit staff with the skills required for the 3
+project
+
+5
+
+Key staff are ill at critical times in the project
+
+2
+
+3
+
+Faults in reusable software components have to be repaired 2
+before these components are reused.
+
+3
+
+Changes to requirements that require major design rework are 2
+proposed (
+
+3
+
+The organization is restructured so that different management are 3
+responsible for the project
+
+3
+
+The database used in the system cannot process as many 2
+transactions per second as expected
+
+3
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+19
+
+Risk examples
+Risk
+
+Probability Effects
+
+Organizational financial problems force reductions in the project Low
+budget
+
+Catastrophic
+
+It is impossible to recruit staff with the skills required for the High
+project
+
+Catastrophic
+
+Key staff are ill at critical times in the project
+
+Moderate
+
+Serious
+
+Faults in reusable software components have to be repaired Moderate
+before these components are reused.
+
+Serious
+
+Changes to requirements that require major design rework are Moderate
+proposed (
+
+Serious
+
+The organization is restructured so that different management are High
+responsible for the project
+
+Serious
+
+The database used in the system cannot process as many Moderate
+transactions per second as expected
+
+Serious
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+20
+
+Risk Planning
+Consider each risk and develop a strategy to manage that risk
+
+🁢 Avoidance strategies
+🁢 The probability that the risk will
+arise is reduced
+
+🁢 Minimization strategies
+🁢 The impact of the risk on the
+
+project or product is reduced
+
+🁢 Contingency plans
+🁢 If the risk arises, contingency
+
+plans are plans to deal with it
+
+If all these fails, blame someone else and throw a pile of
+money at it
+
+21
+
+What-if questions
+🁢 What if several engineers are ill at the same time?
+🁢 What if an economic downturn leads to budget cuts of 20% for the
+🁢
+🁢
+🁢
+🁢
+
+project?
+What if the performance of open-source software is inadequate and
+the only expert on that open-source software leaves?
+What if the company that supplies and maintains software
+components goes out of business?
+What if the customer fails to deliver the revised requirements as
+predicted?
+What if a pandemic comes and we have to work from home for two
+years?
+22
+
+Strategies to manage risks
+Risk
+
+Strategy
+
+Organizational financial problems
+
+Prepare a document for senior management showing how the project is making a very important
+contribution to the goals of the business and presenting reasons why cuts to the project budget
+would not be cost-effective.
+
+Recruitment problems
+
+Alert customer to potential difficulties and the possibility of delays; investigate buying-in
+components.
+
+Staff illness
+
+Reorganize team so that there is more overlap of work and people therefore understand each
+other’s jobs.
+
+Defective components
+
+Replace potentially defective components with bought-in components of known reliability.
+
+Requirements changes
+
+Derive traceability information to assess requirements change impact; maximize information hiding
+in the design.
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+23
+
+Strategies to manage risks
+Risk
+
+Strategy
+
+Organizational restructuring
+
+Prepare a briefing document for senior management showing how the project is making a very
+important contribution to the goals of the business.
+
+Database performance
+
+Investigate the possibility of buying a higher-performance database.
+
+Underestimated development time
+
+Investigate buying-in components; investigate use of a program generator.
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+24
+
+Risk Monitoring
+🁢 Assess each identified risks
+
+🁢
+🁢
+
+regularly to decide whether or
+not it is becoming less or more
+probable.
+Also assess whether the effects
+of the risk have changed.
+Each key risk should be
+discussed at management
+progress meetings.
+
+25
+
+Risk type
+
+Potential indicators
+
+Estimation
+
+Failure to meet agreed schedule; failure to clear reported defects.
+
+Organizational
+
+Organizational gossip; lack of action by senior management.
+
+People
+
+Poor staff morale; poor relationships amongst team members; high staff
+turnover.
+
+Requirements
+
+Many requirements change requests; customer complaints.
+
+Technology
+
+Late delivery of hardware or support software; many reported technology
+problems.
+
+Tools
+
+Reluctance by team members to use tools; complaints about CASE tools;
+demands for higher-powered workstations.
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+26
+
+Risk management is also about people and skills
+🁢 Allow people to tell you the truth…
+🁢 That might be harder than you think…
+🁢 Listen to all perspectives...
+🁢 The personnel risk (knowledge and network “stored” within people) is
+essential…
+
+27
+
+Is this the only way to manage risks in Software Projects?
+
+28
+
+Other ways of dealing with Risk Management
+🁢 FMEA (Failure Mode and Effects Analysis) is a framework for dealing
+🁢
+
+with risk management since the 40s
+FMEA and its variant FMECA have been applied in automotive, safety
+critical and in software industry.
+
+Talwar, P. (2020). Software failure mode and effects analysis. Advances in Intelligent Systems and Computing, 1131 AISC,
+86–91. https://doi.org/10.1007/978-3-030-39512-4_14
+
+29
+
+FMEA in less than a nutshell
+Potential
+Failure
+
+Ocurrence
+Ranking
+1 to 10
+10 most likely
+
+Severity
+Ranking
+
+1 to 10
+10 most severe
+
+Detection
+Ranking
+1 to 10
+10 no advance
+warning
+
+RPN
+
+Severity
+X
+Ocurrence
+X
+Detection
+
+Failure 1 DoS in
+Database
+
+8
+
+2
+
+8
+
+128
+
+Failure 2 Power
+Outage in Servers
+
+10
+
+3
+
+10
+
+300
+
+…
+
+30
+
+So what?
+🁢 Now Imagine that I pick Failure 2, and I think on something to
+
+minimize this risk. Let’s say we put a UPS that triggers the start of
+backup servers on the cloud…
+12
+10
+8
+6
+4
+2
+0
+Severi ity
+
+Ocurrence
+Original
+
+Detect ion
+
+UPS + cl oud
+
+31
+
+🁢 Additional resources:
+🁢 Talwar, P. (2020). Software failure mode and effects analysis. Advances in
+Intelligent Systems and Computing, 1131 AISC, 86–91.
+https://doi.org/10.1007/978-3-030-39512-4_14
+
+32
+
+Software Development
+Risk Management
+
+Software Development
+Product vs Project
+
+Goal
+🁢 Understand the differences between Project-Based Software
+Development and Software Product Development
+
+Historical Perspective
+🁢 During the early days the majority of the software systems were
+🁢
+
+developed as one-off solutions
+A company / agency had a need for a highly customised software
+system:
+🁢 Banks
+🁢 Social Security Agency
+🁢 …
+
+🁢 However after the 80s – 90s organizations started realising that not
+everyone needs a custom software system
+
+Projects vs Products
+Customer
+
+Developer
+
+Problem
+
+Opportunity
+
+generates
+
+generates
+helps-with
+
+Requirements
+Customer
+
+implemented-by
+
+realizes
+
+Software
+
+Requirements
+
+Developer
+
+Developer
+
+Software
+implemented-by
+
+Developer
+
+4
+
+Projects Vs Products
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+5
+
+Project-Based Software Engineering
+Focuses on developing one-off, customerowned systems to support their business
+processes
+The Project is developed by a contractor
+(us) that designs and implements the
+system
+Customers can change requirements at
+any time (they almost always do)
+The contractor should modify the system
+to cope with the new requirements
+The system has a lifespan of +10 years,
+and has to be supported over that
+lifetime
+6
+
+Project-Based Software Engineering
+Customer
+
+Problem
+
+generates
+helps-with
+
+Requirements
+Customer
+
+Software
+implemented-by
+© Ian Sommerville 2018
+
+Developer
+
+7
+
+Historical Perspective
+🁢 For more than 25 years that scenario ruled how we developed software
+🁢 It was common to do a lot of prep work trying to gather all the
+
+requirements upfront
+🁢 It was also commong to plan the project to have a contract that ruled the
+project
+🁢 However, it ”soon” became clear that not everyone needs custom software
+
+🁢 This got amplified with the eruption of AppStores and the Cloud (SaaS)
+
+8
+
+Yes but…
+🁢 The fact that the industry
+
+🁢
+
+focuses on developing software
+products does not mean
+Project-Based Software
+Engineering disappears
+Indeed, many consultancy
+companies make business by
+tailoring software products to
+companies (e.g. ERPs like SAP)
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+9
+
+Projects Vs Products
+
+Wednesday, 23rd January, 2018
+
+L01 - Introduction
+
+10
+
+Product (Software) Engineering
+The starting point is a business
+opportunity identified by a company or
+individuals (aka owning organization)
+The owning organization defines, designs
+and implements a set of features that
+realize the business opportunity
+The owning organization is responsible
+for defining the timescale and the
+features to include and when the product
+will change
+Rapid delivery of the product (MVP) and
+new features. It is essential to capture
+the market for that type of product
+11
+
+Product-Based Software Engineering
+Developer
+
+Opportunity
+
+generates
+realizes
+
+Requirements
+Developer
+
+Software
+implemented-by
+© Ian Sommerville 2018
+
+Developer
+
+12
+
+Software Execution Models
+
+Figure 1.3
+Software
+execution
+models models
+Figure
+1.3 Software
+Figure
+1.3execution
+Software
+execution models
+Stand-alone
+execution
+execution
+SoftwareSoftware
+as a service
+Stand-alone
+Stand-alone
+execution Hybrid
+execution
+Hybrid execution
+Hybrid execution
+asSoftware
+a serviceas a service
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+Partial functionality
+Partial functionality
+Partial functionality
+Product functionality
+Product functionality
+Product functionality
+(browser(browser
+or app) or(browser
+app)
+or app)
+User dataUser data User data User dataUser data User data
+
+Additional
+functionality
+Additional
+functionality
+Additional functionality
+Product functionality
+Product functionality
+Product functionality
+User dataUser
+backups
+data backups
+User data backups
+Product updates
+Product updates
+Product updates
+User dataUser data User data
+Product updates
+Product updates
+Product updates
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s servers
+Vendor’s servers
+Vendor’s servers
+
+© Ian Sommerville 2018
+
+13
+
+Software Execution Models
+Figure 1.3 Software execution models
+Stand-alone execution
+
+Hybrid execution
+
+Software as a service
+
+User’s computer
+
+User’s computer
+
+User’s computer
+
+User interface
+Product functionality
+User data
+
+User interface
+Partial functionality
+User data
+
+Product updates
+
+Additional functionality
+User data backups
+Product updates
+
+Product functionality
+User data
+
+Vendor’s servers
+
+Vendor’s servers
+
+Vendor’s servers
+
+User interface
+(browser or app)
+
+(Desktop versions)
+14
+
+Software Execution Models
+
+Figure 1.3
+Software
+execution
+models models
+Figure
+1.3 Software
+Figure
+1.3execution
+Software
+execution models
+Stand-alone
+execution
+execution
+SoftwareSoftware
+as a service
+Stand-alone
+Stand-alone
+execution Hybrid
+execution
+Hybrid execution
+Hybrid execution
+asSoftware
+a serviceas a service
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+Partial functionality
+Partial functionality
+Partial functionality
+Product functionality
+Product functionality
+Product functionality
+(browser(browser
+or app) or(browser
+app)
+or app)
+User dataUser data User data User dataUser data User data
+
+Additional
+functionality
+Additional
+functionality
+Additional functionality
+Product functionality
+Product functionality
+Product functionality
+User dataUser
+backups
+data backups
+User data backups
+Product updates
+Product updates
+Product updates
+User dataUser data User data
+Product updates
+Product updates
+Product updates
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s servers
+Vendor’s servers
+Vendor’s servers
+
+© Ian Sommerville 2018
+
+15
+
+Software Execution Models
+Figure 1.3 Software execution models
+Stand-alone execution
+
+Hybrid execution
+
+Software as a service
+
+User’s computer
+
+User’s computer
+
+User’s computer
+
+User interface
+Product functionality
+User data
+
+User interface
+Partial functionality
+User data
+
+Product updates
+
+Additional functionality
+User data backups
+Product updates
+
+Product functionality
+User data
+
+Vendor’s servers
+
+Vendor’s servers
+
+Vendor’s servers
+
+User interface
+(browser or app)
+
+16
+
+Software Execution Models
+
+Figure 1.3
+Software
+execution
+models models
+Figure
+1.3 Software
+Figure
+1.3execution
+Software
+execution models
+Stand-alone
+execution
+execution
+SoftwareSoftware
+as a service
+Stand-alone
+Stand-alone
+execution Hybrid
+execution
+Hybrid execution
+Hybrid execution
+asSoftware
+a serviceas a service
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User’s computer
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+User interface
+Partial functionality
+Partial functionality
+Partial functionality
+Product functionality
+Product functionality
+Product functionality
+(browser(browser
+or app) or(browser
+app)
+or app)
+User dataUser data User data User dataUser data User data
+
+Additional
+functionality
+Additional
+functionality
+Additional functionality
+Product functionality
+Product functionality
+Product functionality
+User dataUser
+backups
+data backups
+User data backups
+Product updates
+Product updates
+Product updates
+User dataUser data User data
+Product updates
+Product updates
+Product updates
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s Vendor’s
+servers servers
+Vendor’s servers
+Vendor’s servers
+Vendor’s servers
+
+© Ian Sommerville 2018
+
+17
+
+Software Execution Models
+
+Figure 1.3 Software execution models
+Stand-alone execution
+
+Hybrid execution
+
+Software as a service
+
+User’s computer
+
+User’s computer
+
+User’s computer
+
+User interface
+Product functionality
+User data
+
+User interface
+Partial functionality
+User data
+
+Product updates
+
+Additional functionality
+User data backups
+Product updates
+
+Product functionality
+User data
+
+Vendor’s servers
+
+Vendor’s servers
+
+Vendor’s servers
+
+User interface
+(browser or app)
+
+18
+
+The product vision
+🁢 The starting point for software product development is a ‘product
+🁢
+🁢
+
+vision’.
+Product vision is a simple statement describing the essence of the
+product to be developed.
+The product vision should answer three fundamental questions:
+🁢 What is the product to be developed?
+🁢 Who are the target customers and users?
+🁢 Why should customers buy this product?
+
+© Ian Sommerville 2018
+
+19
+
+Moore’s vision template
+🁢
+🁢
+🁢
+🁢
+🁢
+🁢
+
+FOR (target customer)
+WHO (statement of the need or opportunity)
+The (PRODUCT NAME) is a (product category)
+THAT (key benefit, compelling reason to buy)
+UNLIKE (primary competitive alternative)
+OUR PRODUCT (statement of primary differentiation)
+
+© Ian Sommerville 2018
+
+20
+
+Payment without bank system
+🁢
+🁢
+🁢
+🁢
+🁢
+🁢
+
+FOR __________________________
+WHO __________________________
+The ______ is a ____________________
+THAT ___________
+UNLIKE ________________
+OUR PRODUCT ____________________
+
+21
+
+Sources for developing a product vision
+
+Domain experience
+Product Experience
+Customer Experience
+Prototyping and Sandboxing
+22
+
+Software Product Management
+🁢 Software Procut Management is an activity that focuses on the
+🁢
+🁢
+🁢
+
+software products developed and sold by their business
+Product Managers (PMs) take the responsibility for the product.
+”Own” the requirements, and are involved in planning, development,
+and the marketing process
+Are the Interface between the organization, its customers, and the
+developers
+They are involved during the whole product’s lifetime
+
+23
+
+Figure 1.4 Product
+management concerns
+Product Management
+Concerns
+Business needs
+
+Product
+manager
+Customer
+experience
+
+Technology
+constraints
+
+© Ian Sommerville 2018
+
+24
+
+Technical Interactions of Product Managers
+Figure 1.5 Technical interactions of product managers
+
+Product vision
+management
+
+Product
+backlog
+management
+
+User stories
+and scenarios
+Product
+manager
+
+Acceptance
+testing
+
+Customer
+testing
+
+User interface
+design
+
+© Ian Sommerville 2018
+
+25
+
+Differences at Process Level
+🁢 There are many differences in how we deal with one-off projects vs
+🁢
+
+how we deal with products
+We are going to discuss what are the differences for:
+🁢 Requirements
+🁢 Design
+🁢 Development
+🁢 Testing
+🁢 Deployment
+🁢 Maintenance and Evolution
+
+26
+
+Suplementary Materials
+🁢 Engineering Software Products. An Introduction to Modern Software Engineering.
+🁢
+
+Ian Sommerville, ISBN 978-1-292-37634-9 Pearson Education.
+Chapter 1
+
+27
+
+Software Development
+Product vs Project
+
+Software Development
+L09 – Software Reuse
+
+This Photo by Unknown Author is licensed under CC BY-NC-ND
+
+Summary
+
+2
+
+The Software Reuse Landscape
+
+Software Reuse and Automation
+Nowadays we develop software by integrating bits and pieces of
+existing software (reuse)
+
+The general goal is to reduce development time (time to market),
+lower development costs and process risk
+
+Companies see their software as valuable assets, and promote their
+reuse to increase return of investment
+4
+
+Benefits of Software Reuse
+Reduced time to market
+Effective use of domain experts
+Increased dependability and trust
+Lower development costs
+Reduced risk
+Standards Compliance / Interoperability
+5
+
+Drawbacks of Software Reuse
+Finding and using reusable components
+
+Increased maintenance costs
+
+Not invented here syndrom
+
+Lack of support
+6
+
+The reuse landscape
+🁢
+🁢
+🁢
+🁢
+🁢
+🁢
+🁢
+
+Component Based Software Engineering
+Model Driven Engineering
+Software Product Lines
+Service Oriented Architecture
+Application Frameworks
+Configurable Application System
+…
+
+7
+
+Component Based Software Engineering
+
+8
+
+Component Based Software Engineering
+🁢 Relies in the reuse of entities called components
+🁢 It emerged after the failure of Object-Oriented development as a
+🁢
+🁢
+
+support for reuse
+Components are more abstract, and bigger than classes and can be
+considered as standalone service providers
+They can exist as stand-alone entities
+
+9
+
+Component-Based Software Engineering essentials
+🁢
+🁢
+🁢
+🁢
+
+Independent components specified by their interfaces.
+Component standards to facilitate component integration.
+Middleware that provides support for component inter-operability.
+A development process for reuse.
+
+10
+
+Components
+🁢
+🁢
+🁢
+🁢
+🁢
+
+Components are independent. No interferences with each other;
+Component implementations are hidden
+Communication is through interfaces
+One components can be replaced by another if its interface is
+maintained
+Component infrastructures offer a range of standard services
+
+11
+
+Component Characteristics
+Composable
+
+Deployable
+
+Documented
+
+Independent'
+
+Standardized
+12
+
+Component interfaces
+
+Requires interface
+Defines the services
+that are needed and
+should be provided
+by other components
+
+Provides interface
+Component
+
+Defines the services
+that are provided
+by the component
+to other components
+
+Note UML notation. Ball and sockets can fit together.
+
+13
+
+A model of a data collector component
+
+Requires interface
+
+Provides interface
+addSensor
+removeSensor
+startSensor
+
+sensorManagement
+Data collector
+sensorData
+
+stopSensor
+testSensor
+initialize
+report
+listAll
+
+14
+
+Types of composition
+🁢 Sequential composition (1) where the composed components are executed in
+🁢
+
+sequence. This involves composing the provides interfaces of each component.
+Hierarchical composition (2) where one component calls on the services of
+another. The provides interface of one component is composed with the requires
+interface of another.
+
+🁢 Additive composition (3) where the interfaces of two components are put
+together to create a new component. Provides and requires interfaces of
+integrated component is a combination of interfaces of constituent
+components.
+
+19/11/2014
+
+Chapter 16 Component-based software engineering
+
+15
+
+Types of component composition
+
+A
+
+A
+
+B
+
+A
+
+B
+
+(1)
+
+B
+
+(2)
+
+(3)
+
+16
+
+Model Driven Software Engineering
+
+17
+
+Model-driven engineering
+🁢 Model-driven engineering (MDE) is an approach to software
+🁢
+
+development where models rather than programs are the principal
+outputs of the development process.
+The programs that execute on a hardware/software platform are then
+generated automatically from the models.
+
+Model Driven Software Engineering
+🁢 MDSD is about using models and to produce software.
+🁢 Models passes from merely being a way to describe software to
+became an active artifact in the software development process.
+
+🁢 MDSD raises the level of abstraction in software engineering so that
+🁢 We don’t have to be concerned with programming language details or
+the specifics of execution platforms.
+
+19
+
+Model Driven Engineering
+
+20
+
+Use of Domain Specific Languages
+
+21
+
+Model Driven Architecture
+🁢 Model Driven Architecture (MDA) is a specific example of MDSD
+🁢 We have four different levels of models
+🁢
+🁢
+🁢
+🁢
+
+CIM (Computation Independent Models)
+Platform Independent Models
+Platform Specific Models
+Code (yes code is also a model)
+
+22
+
+MDA transformations
+
+Platform
+independent
+model
+
+Computation
+independent
+model
+
+Translator
+
+Domain specific
+guidelines
+
+Executable
+code
+
+Platform
+specific model
+
+Translator
+
+Translator
+
+Platform
+specific patterns
+and rules
+
+Language
+specific
+patterns
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+23
+
+Multiple platform-specific models
+
+J2EE Translator
+
+J2EE specific
+model
+
+Java code
+generator
+
+Java program
+
+.NET specific
+model
+
+C# code
+generator
+
+C# program
+
+Platform
+independent
+model
+
+.Net Translator
+
+Sommerville, I. (2016). Software Engineering, Global Edition (10th ed.). Pearson Education.
+
+24
+
+Usage of model-driven engineering
+🁢 Pros
+🁢 Allows systems to be considered at higher levels of abstraction
+🁢 Generating code automatically means that it is cheaper to adapt systems to
+new platforms.
+
+🁢 Cons
+🁢 Models for abstraction and not necessarily right for implementation.
+🁢 Savings from generating code may be outweighed by the costs of developing
+🁢
+
+translators for new platforms.
+The arguments for platform-independence are only valid for large, longlifetime systems. For software products and information systems, the savings
+from the use of MDA are likely to be outweighed by the costs of its
+introduction and tooling.
+
+Software Product Lines
+
+26
+
+Software Product Lines
+🁢 Development paradigm
+
+🁢
+
+inspired by manufacturing
+processes of physical systems
+(e.g. automotive)
+What do they aim to achieve…?
+🁢 Reducing costs and
+increasing quality
+
+🁢 … and how?
+🁢 Reuse mechanisms are
+🁢
+
+planned a priori
+Variability is managed explicitly
+
+Telephone (and Software) Product Lines
+
+28
+
+🁢 A SPL is a strategic, planned reuse approach:
+🁢 Two processes:
+🁢
+
+🁢 Domain Engineering
+🁢 Product Engineering
+Support for commonality and variability
+
+29
+
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+SPL Processes
+🁢 Domain Engineering
+
+SPL Processes
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Domain Engineering
+5/2678'(
+)&"*+,$(
+921.67
+
+9'2$+&'(:"*'6
+
+SPL Processes
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Domain Engineering
+5/2678'(
+)&"*+,$(
+921.67
+
+0'8.4/(
+)&"*+,$(
+921.67
+
+9'2$+&'(:"*'6
+
+!)5&,;.$',$+&'
+
+SPL Processes
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Domain Engineering
+5/2678'(
+)&"*+,$(
+921.67
+
+0'8.4/(
+)&"*+,$(
+921.67
+
+0':'6";(
+<"&'(
+588'$8
+
+9'2$+&'(="*'6
+
+!)5&,>.$',$+&'
+
+<"&'(588'$8
+
+SPL Processes
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Domain Engineering
+5/2678'(
+)&"*+,$(
+921.67
+
+0'8.4/(
+)&"*+,$(
+921.67
+
+0':'6";(
+<"&'(
+588'$8
+
+9'2$+&'(>"*'6
+
+!)5&,?.$',$+&'
+
+<"&'(588'$8
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)62/
+
+SPL Processes
+0"12./(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Domain Engineering
+5/2678'(
+)&"*+,$(
+921.67
+
+0'8.4/(
+)&"*+,$(
+921.67
+
+0':'6";(
+<"&'(
+588'$8
+
+9'2$+&'(>"*'6
+
+!)5&,?.$',$+&'
+
+<"&'(588'$8
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)62/
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+<?2&2,$'&.@'
+)&"*+,$
+
+:'2$+&'
+>"*'7(<"/#.4+&2$."/
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+<?2&2,$'&.@'
+)&"*+,$
+
+A'$&.';'
+<"&'
+599'$9
+
+:'2$+&'
+>"*'7(<"/#.4+&2$."/
+
+A'$&.';'*
+<"&'(599'$9
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+<?2&2,$'&.@'
+)&"*+,$
+
+A'$&.';'
+<"&'
+599'$9
+
+:'2$+&'
+>"*'7(<"/#.4+&2$."/
+
+A'$&.';'*
+<"&'(599'$9
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+B+.7*
+)&"*+,$
+
+)&"*+,$
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+<?2&2,$'&.@'
+)&"*+,$
+
+A'$&.';'
+<"&'
+599'$9
+
+:'2$+&'
+>"*'7(<"/#.4+&2$."/
+
+A'$&.';'*
+<"&'(599'$9
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+B+.7*
+)&"*+,$
+
+)&"*+,$
+
+SPL Processes
+0"12./(3/4./''&./4
+5667.,2$."/(3/4./''&./4
+
+!"#$%&'()&"*+,$(-./'
+
+🁢 Application Engineering
+5/2789'(
+)&"*+,$(
+:21.78
+
+0'9.4/(
+)&"*+,$(
+:21.78
+
+0';'7"6(
+<"&'(
+599'$9
+
+:'2$+&'(>"*'7
+
+!)5&,?.$',$+&'
+
+<"&'(599'$9
+
+<?2&2,$'&.@'
+)&"*+,$
+
+A'$&.';'
+<"&'
+599'$9
+
+:'2$+&'
+>"*'7(<"/#.4+&2$."/
+
+A'$&.';'*
+<"&'(599'$9
+
+='/'&2$'(
+)&"*+,$(
+-./'
+
+)&"*+,$."/
+)72/
+
+B+.7*
+)&"*+,$
+
+)&"*+,$
+
+Feature Model
+
+Capturing Domain Variability
+Optional
+feature
+
+Mandatory
+feature
+
+SmartPhone
+
+FrontCamera
+
+RearCamera
+
+SmartPhone
+
+SmartPhone
+
+Configurations
+
+RearCamera
+
+FrontCamera
+
+RearCamera
+
+Illustrating example
+🁢 A vehicle control system from the automotive domain
+🁢 Composed of 15 features which are (among others):
+
+Cruise Control System (CC), to maintain a constant driver determined speed
+Traction Control System (TCS), to prevent the wheels from slipping
+Antilock Braking System (ABS), to ensure that the maximum braking force is transmitted to all
+four wheels of the vehicle
+🁢 Stability Control System (SCS), to keep the vehicle going in the direction in which the driver is
+steering the car
+🁢
+🁢
+🁢
+
+Capturing Domain Variability: A simplified case of a car SPL
+
+44
+
+How we realize that variability: A simplified case of a car SPL
+🁢 Architectural variability (for 15 features):
+
+45
+
+Additional Readings
+🁢 Software Reuse
+
+🁢 Basic: Course book section 15
+🁢 Component-Based Software Engineering
+🁢 Basic: Course book section 16
+🁢 Service Oriented Architecture
+🁢 Basic: Course book section 18
+🁢 Software Product Lines
+🁢 Basic: Course book section 15.3
+🁢 Advanced:
+🁢
+🁢
+
+van der Linden, F., Schmid, K., & Rommes, E. (2007). Software Product Lines in Action: The Best Industrial
+Practice in Product Line Engineering. In ISBN 3540714367. Springer Berlin Heidelberg.
+Clements, P., & Northrop, L. (2007). A Framework for Software Product Line Practice, Version 5.0.
+https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=495357
+
+🁢 MDSD / MDA
+
+🁢 Basic: Course book, Section 5.5
+🁢 Advanced:
+🁢
+
+Brambilla, M., Cabot, J., & Wimmer, M. (2012). Model-Driven Software Engineering in Practice. In Synthesis
+Lectures on Software Engineering. Morgan & Claypool Publishers. https://doi.org/10.2200/S00441ED1V01Y201208SWE001
+46
+
+Software Development
+L09 – Software Reuse
+
+This Photo by Unknown Author is licensed under CC BY-NC-ND
+
+PA1473 – Software Development
+Agile Software Development:
+Agile Practices
+
+Objectives
+Introduce the problems of Plan-Driven Development
+
+Introduce “Agile” software
+development practices
+
+Agile Manifesto
+Extreme Programming
+
+Software Development Process and Practices are situational
+2
+
+Plan-Driven Models
+Requirements
+definition
+System and
+software design
+
+Implementation
+and unit testing
+Integration and
+system testing
+Operation and
+maintenance
+3
+
+Plan-Driven Models
+🁢 Each stage of the process
+Requirements
+definition
+
+🁢
+System and
+software design
+
+should be motivated
+Each stage builds on the output
+of the previous stage
+
+Implementation
+and unit testing
+Integration and
+system testing
+Operation and
+maintenance
+
+4
+
+The Software Crisis
+Projects running over-budget
+Projects running over-time
+Software was very inefficient
+Software was of low quality
+Software often did not meet requirements
+Projects were unmanageable and code difficult to maintain
+Software was never delivered
+
+5
+
+Software Crisis
+
+“The major cause of the software crisis is that the machines have become several
+orders of magnitude more powerful!
+To put it quite bluntly: as long as there were no machines, programming was no
+problem at all; when we had a few weak computers, programming became a mild
+problem, and now we have gigantic computers, programming has become an equally
+gigantic problem.”
+
+Edsger Dijkstra, 1968
+https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+6
+
+Problems with Traditional Models
+🁢 The main problem with Plan-Driven / Traditional models is that we
+
+start with an assumption that is not always true:
+🁢 We need the users & customers to tell us clearly, early and at once
+exactly what they want.
+
+7
+
+Coping with change
+🁢 Change is intrinsic in all large software projects
+🁢 Just by understanding the requirements we introduce change
+🁢 When we elicitate requirements, we tend to work with the as-is
+
+🁢
+
+model of the requirements
+🁢 Ever-changing technologies open up new possibilities for
+improving the to-be model
+Change leads to rework so the costs of change include both rework
+(e.g. re-analysing requirements) as well as the costs of implementing
+new functionality
+
+8
+
+Change in Traditional Models
+🁢 Plan-Driven / Traditional , and in general any classic development
+🁢
+
+model, does not mix well with change.
+The cost and effort associated to a change request grows
+exponentially with time in a software project.
+
+9
+
+Why Agile?
+🁢 With the eruption of the dot-com bubble, the speed-to-market and
+company growth became fundamental competitive factors.
+
+The dot-com bubble was a economic bubble
+and period of excessive speculation that
+occurred roughly from 1995 to 2000, a
+period of extreme growth in the usage and
+adoption of the Internet [source: wikipedia]
+
+🁢 Agile methods appears as a response (yet another silver bullet) to
+cope with these market needs.
+
+10
+
+The Cost of Change
+
+🁢 Initially the efforts were put in trying to forecast the potential sources
+of change, assuming that the change will be always expensive.
+Pressman, Roger S. 2001. Software Engineering. A Practitioner’s Approach. McGraw Hill Higher Education.
+11
+
+Plan-Driven Models
+🁢 Each stage of the process
+Requirements
+definition
+
+🁢
+System and
+software design
+
+should be motivated
+Each stage builds on the output
+of the previous stage
+
+Implementation
+and unit testing
+Integration and
+system testing
+Operation and
+maintenance
+
+12
+
+Reflection
+🁢 Any idea how this thing called ”agile” can help?
+
+Tuesday, 18th January, 2022
+
+L01 - Introduction
+
+13
+
+Agile Practices
+Agile Manifesto
+
+Agile Manifesto
+🁢
+🁢
+🁢
+🁢
+
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
+🁢 While there is value in the items on the right, the items on the left are
+also valuable
+
+15
+
+Principles behind the Agile Manifesto
+🁢 Our highest priority is to satisfy the customer through early and
+🁢
+🁢
+🁢
+
+continuous delivery of valuable software
+Welcome changing requirements, even late in development. Agile
+processes harness change for the customer's competitive advantage.
+Deliver working software frequently, from a couple of weeks to a
+couple of months, with a preference to the shorter timescale.
+Business people and developers must work together daily throughout
+the project.
+
+16
+
+Principles behind the Agile Manifesto
+🁢 Build projects around motivated individuals.
+
+🁢 Give them the environment and support they need
+🁢 Trust them to get the job done.
+🁢 The most efficient and effective method of conveying information to
+and within a development team is face-to-face conversation.
+🁢 Working software is the primary measure of progress.
+🁢 Agile processes promote sustainable development. The sponsors,
+developers, and users should be able to maintain a constant pace
+indefinitely.
+
+17
+
+Principles behind the Agile Manifesto
+🁢 Continuous attention to technical excellence and good design
+🁢
+🁢
+🁢
+
+enhances agility.
+Simplicity--the art of maximizing the amount of work not done--is
+essential.
+The best architectures, requirements, and designs emerge from selforganizing teams.
+At regular intervals, the team reflects on how to become more
+effective, then tunes and adjusts its behavior accordingly.
+
+18
+
+Agile Programming
+
+19
+
+Agile Practices
+
+XP: Extreme Programming
+
+What is Extreme Programming?
+
+21
+
+What is Extreme Programming?
+
+22
+
+Extreme Programming
+🁢 The basic idea beyond XP is to push the principles applied in iterative
+software development to its extreme.
+Waterfall
+
+R
+
+Requirements
+
+SD
+
+System Design
+
+D
+
+Development
+
+T
+
+Testing
+
+I
+
+Implementation
+(Deployment)
+
+Iterative
+
+XP
+
+23
+
+XP Practices
+Open Workspaces
+Refactoring
+40-hours weeks
+Simple Design
+
+Misc
+Test First Development
+
+Testing
+Continuous Integration
+
+Design
+
+XP Practices
+
+User Stories
+
+Requirements
+
+On-Site Customer
+
+Metaphor
+
+Planning
+Collective Ownership
+Planning game
+
+Development
+Pair Programming
+
+Small Releases
+
+24
+
+XP Main Practices: Requirements
+🁢 On site customer: The customer (or a customer representative) is
+
+🁢
+🁢
+
+member of the group and should be available 100% of time.
+🁢 Will be the responsible of bringing the requirements to the team
+for their implementation.
+Metaphor: The shape of the system is defined by a set of metaphors
+shared with the customer.
+User stories: The requirements are documented in story cards to
+define the basic interaction with the system
+
+25
+
+Requirements in XP: User Stories
+🁢 XP claims about embracing the change
+🁢 To be able to cope with change XP (and most agile methods) do not
+🁢
+🁢
+
+include an explicit, exhaustive requirements engineering activity
+Instead the customer which is cooperating with the team, describes
+some functionality in form of a user story
+User stories should be business-oriented, testable and estimable
+
+26
+
+Requirements in XP: Story Cards
+🁢 The user stories are documented in story cards, that describe a basic
+🁢
+
+interaction with the system.
+User stories are used to decide what to include in the next release.
+
+27
+
+XP Planning: The planning game
+🁢 Not all the stories are going to be developed in the first iteration.
+🁢 The customer should select the smallest set of the most valuable
+🁢
+
+stories that make sense together (the minimal feasible product) and
+that represent some business value.
+The team develop those and put them into production, and then the
+rest will be implemented in the following iterations.
+
+28
+
+Requirements in XP: Story Cards & Tasks
+🁢 User stories are further broken into tasks to be developed
+
+29
+
+XP Main Practices: Planning
+🁢 Planning game: The customer decides the scope and the timing of the
+
+🁢
+
+release, based on estimations made by the programmers.
+🁢 What to include in each release is determined by priorities and
+time available.
+Small releases: The minimal feasible product is released as soon as
+possible. New releases will be made often (as often as possible).
+
+30
+
+XP Planning: The planning game
+🁢 To be able to establish the scope for an iteration is like shopping:
+🁢
+🁢
+🁢
+🁢
+
+you have some money in the pocket
+some priorities
+look at the prices of the items
+…and decide what to buy.
+
+31
+
+XP Planning: The planning game
+🁢 When planning an iteration
+🁢
+🁢
+🁢
+
+The items are the stories
+The prices are the estimates made by the team
+The budget is calculated by analyzing the team's output in terms of stories
+per iteration (also known as velocity)
+
+🁢 This velocity can be used to determine:
+🁢 How many stories can the team implement in a given period (time)
+🁢 How long a set of specific stories will take to finish (scope)
+🁢 More to come later on…
+
+32
+
+XP Main Practices: Design
+🁢 Simple design:
+🁢
+🁢
+🁢
+🁢
+
+The design should be able to run all tests,
+Allows understanding all what needs to be understood
+Contains no duplicated code, and has the fewest possible classes and
+methods.
+Enough design is carried out to meet the actual requirements (and no more
+design is done).
+
+🁢 Refactoring: the design of the system is continuously evolving through
+code refactorings carried out by the developers as soon as the
+improvements are found
+
+33
+
+Traditional Approaches: Design for Tomorrow
+Developers are really good at trying to anticipate future problems and design for the future
+
+Beck, Kent, and Cynthia Andres. 2005. Extreme Programming Explained: Embrace Change (The XP
+Series). Addison-Wesley Professional.
+
+34
+
+Traditional Approaches: Design for Tomorrow
+🁢 The problem of this approach is the uncertainty
+🁢 What happens if tomorrow never comes?
+🁢
+🁢
+🁢
+
+May be the features we though ahead are removed from the product by the
+customer
+May be we need to change something else that makes the new design not
+feasible
+May be we learn how to do things better between now and later
+
+35
+
+XP (and Agile Approaches)
+
+Beck, Kent, and Cynthia Andres. 2005. Extreme Programming Explained: Embrace Change (The XP Series).
+36
+Addison-Wesley Professional.
+
+Design Strategy
+1. Start with a test, do a certain amount of design to just write the test.
+2.
+3.
+4.
+
+(Objects, Methods, Visibilities)
+Design (and implement) just enough to get the test running. We have
+to design enough to get this test and all the previous ones running
+Repeat
+As soon as you see an opportunity to make it simpler do it!
+
+37
+
+Refactoring
+🁢 Refactoring: Controlled technique to change the structure of an
+existing code, improving certain qualities
+🁢 The essence is applying small behavior-preserving changes and
+
+transformations, each of which, if isolated is “too small to be worth doing”
+
+38
+
+Refactoring
+🁢 Refactoring (noun): a change made to the internal structure of
+🁢
+
+software to make it easier to understand and cheaper to modify
+without changing its observable behavior.
+Refactoring (verb): to restructure software by applying a series of
+refactorings without changing its observable behavior.
+
+M. Fowler, K. Beck, J. Brant, W. Opdyke, and D. Roberts, Refactoring: Improving the Design of Existing Code.
+Addison Wesley, 1999.
+39
+
+Agile Refactoring
+🁢 The main principle is to implement the given feature or change
+🁢
+🁢
+
+request
+Apply the refactorings needed to make the implementation of the
+feature or change request easier (anywhere on the code)
+When testing the new development the refactorings are tested also
+”for free”
+
+40
+
+Refactoring Examples: The Blob
+
+https://sourcemaking.com/antipatterns/the-blob
+41
+
+Refactoring Examples: The Blob
+
+https://sourcemaking.com/antipatterns/the-blob
+42
+
+Refactoring Examples: The Blob – Large Class
+
+Problem:
+
+Solution:
+
+https://sourcemaking.com/refactoring/smells/large-class
+
+Payoff:
+
+43
+
+Example of Refactorings: Long Method
+
+Problem:
+
+Solution:
+
+Payoff:
+
+https://sourcemaking.com/refactoring/smells/long-method
+44
+
+Example of Refactorings: Shotgun surgery
+
+Problem:
+
+Solution:
+
+Payoff:
+
+https://sourcemaking.com/refactoring/smells/shotgun-surgery
+45
+
+Reflection
+🁢 Any potential drawback on this strategy?
+
+Tuesday, 18th January, 2022
+
+L01 - Introduction
+
+46
+
+Technical Debt
+47
+
+Technical Debt
+🁢 Technical Debt (TD) tries explain the long term impact of sub-optimal
+decisions made due to the need of speed
+
+48
+
+Technical Debt & Mitigation Strategies
+🁢 Refactoring is the most applied solution to mitigate TD
+🁢 However:
+🁢
+🁢
+
+Does not always reduce the TD we are aiming for
+Introduced bugs
+
+49
+
+XP Main Practices: Development
+🁢 Pair programming: all the code is produced by pairs of developers
+🁢
+
+that work altogether.
+Collective Ownership:
+🁢 Any pair of programmers can work anywhere on the system, and perform
+
+🁢
+
+refactorings at any time, anywhere, if they see the opportunity.
+Anyone can change anything. This removes the possible islands of expertise
+and all the members of the team can work and understand the whole code.
+
+🁢 Coding Standards:
+🁢
+🁢
+🁢
+
+Everybody is potentially able to work everywhere in the code
+Everybody is able to elaborate on any other’s previous work
+We need coding practices (comments, structure conventions…)
+50
+
+Pair Programming
+All code is written by two developers working altogether with one keyboard and
+one mouse
+
+One thinks on the best solution for the problem at hand
+
+The second thinks more strategically on the eventual consequences
+
+The pairing is dynamic (can change frequently)
+51
+
+XP Main Practices: Testing
+🁢 Test first development: Developers write unit tests for every new
+🁢
+
+piece of functionality, even before the functionality is implemented.
+Continuous integration: the new code being produced is integrated
+immediately (after few hours). When integrating, the system is fully
+rebuilt and all the tests must pass, or the batch of changes is
+discarded.
+
+52
+
+Testing in XP: Test First Development
+🁢 Test first development is one of the most innovative practices that
+🁢
+🁢
+
+came with XP.
+In incremental and XP development we do not have a full specification
+of the system we can use to test against.
+The main highlights regarding the testing in XP are
+🁢 Build the test cases directly from the scenario specifications
+(usually the test cases are indeed the scenario specifications)
+🁢 The customer participates in the description of the test (usually a
+less detailed test case) but also in their validation (as acceptance
+tests)
+🁢 Automated testing by using automatic testing frameworks
+53
+
+Testing in XP: Test First Development
+🁢 The user stories should be broken down into tasks card, each of them
+has been specified into one or more unit tests that check the
+implementation.
+
+54
+
+Testing in XP: Test First Development
+🁢 Defining the tests before developing the software influences the
+
+🁢
+
+development team to
+🁢 Try to test everything that is going to be relevant for the customer
+🁢 Know exactly how the system should behave and how shouldn’t
+🁢 Develop the software to pass the tests
+Test first and automated testing results in an extremely high number
+of tests that should be executed.
+
+55
+
+Testing in XP: Test First Development
+
+The number of tests grows exponentially
+
+The changing requirements makes that some tests being either
+obsolete or inconsistent with the current system specification
+
+56
+
+XP Main Practices:
+🁢 40h weeks: No one can work a second consecutive week with over
+
+🁢
+
+time.
+🁢 Even isolated overtime used too frequently can be a sign of
+problems that should be analyzed and addressed.
+🁢 Overtime hinders the quality of the delivered code and reduces
+the medium-term productivity.
+Open workspaces: Ideally the team should work in an open space that
+supports the communication.
+
+57
+
+XP Process
+
+58
+
+XP Iteration
+
+59
+
+XP Practices: Interactions
+
+60
+
+Agile Practices
+
+Test Driven Development
+
+Test-Driven Development: One Step Forward
+🁢 Test-Driven Development (TDD) is a software development approach
+🁢
+🁢
+
+which proposes inter-leaving the development and testing activities
+Is the evolution of the Test-First approach included in the XP practices
+TDD is a design and programming activity, not a testing activity per se
+
+62
+
+TDD Fundamental Process
+1. Identify the increment of functionality that would be a good addition
+2.
+3.
+4.
+5.
+
+to the system
+Write a test specifying how the system should invoke the functionality
+and what the result should be
+Run the test (the test fails showing that the functionality is not
+already present)
+Develop the [minimum] code that makes the new test pass and then
+verify that all the previous tests are still passing
+Refactoring: Review the code, improving the design
+
+63
+
+Testing Drive Development: One Step Forward
+
+Jeffries, Ron, and Grigori Melnik. 2007. “TDD--The Art of Fearless Programming.” Software, IEEE 24 (3): 24–30.
+64
+
+Reflection
+🁢 Why do you think TDD helps?
+
+Tuesday, 18th January, 2022
+
+L01 - Introduction
+
+65
+
+TDD Benefits
+🁢 Safe net for refactorings (if you break something you will notice)
+🁢 Shorten feedback loops
+
+66
+
+Bibliography
+
+Bibliography
+🁢 Course book:
+🁢
+🁢
+
+Chapter 3 for agile practices in general
+Section 8.2 for Test driven development
+
+68
+
+Additional Bibliography
+🁢 XP Practices:
+🁢
+🁢
+🁢
+
+The C3 Team. 1998. “Chrysler Goes to ‘Extremes.’” Distributed Computing
+Magazine, no. October: 24–28.
+Beck, K. 1999. “Embracing Change with Extreme Programming.” Computer 32
+(10): 70–77. doi:10.1109/2.796139.
+Beck, Kent, and Cynthia Andres. 2005. Extreme Programming Explained:
+Embrace Change (The XP Series). Addison-Wesley Professional.
+
+🁢 XP Planning game:
+
+🁢 http://www.extremeprogramming.org/rules/planninggame.html
+🁢 http://c2.com/cgi/wiki?PlanningGame
+🁢 TDD:
+🁢 Jeffries, Ron, and Grigori Melnik. 2007. “TDD--The Art of Fearless
+
+Programming.” Software, IEEE 24 (3): 24–30. doi:10.1109/MS.2007.75.
+69
+
+PA1473 – Software Development
+Agile Software Development:
+Agile Practices
+
+Agile Software Development
+Agile Project Management
+
+Objectives
+🁢 Get understanding about the different frameworks for agile project
+
+🁢
+🁢
+🁢
+
+planning, management and estimation
+🁢 SCRUM
+🁢 Kanban
+Understand the problems associated with long-term estimation
+Understand the concept of velocity and how it helps correcting
+estimation errors
+Understand non-absolute estimation approaches and how these can
+be integrated in the management and planning of Agile Software
+Processes
+
+Agile Project Management
+SCRUM
+
+What is Scrum?
+
+SCRUM
+🁢 SCRUM is a framework for organizing agile projects, and to provide
+🁢
+🁢
+
+visibility about their progress.
+It does not advocate for specific development practices (such as pair
+programming).
+Therefore can fit and easily integrated into existing practices in the
+companies.
+
+SCRUM Roles: A Flattened Structure
+
+Rubin, Kenneth S. 2012. Essential Scrum: A Practical Guide to the Most Popular Agile Process. Addison Wesley.
+
+SCRUM: Roles
+🁢 Development team (Team):
+
+🁢 Self organizing team of developers
+🁢 Not bigger than 7 people.
+🁢 Responsible for the software development as well as other project documents and
+deliverables.
+
+🁢 Product owner (PO):
+🁢
+🁢
+🁢
+🁢
+
+Individual or small group of people
+Identify the product features or requirement prioritize them for the development
+Review the backlog to ensure that the project meets the business needs
+The product owner can be a customer but also a product manager in a software
+company or a stakeholder representative
+
+🁢 ScrumMaster (SM):
+
+🁢 Coach, to ensure that the Scrum process is followed and guides on its use.
+🁢 Interfacing with the rest of the company
+🁢 Makes sure that the Scrum team keeps focused and without outside interferences.
+
+SCRUM Main Concepts: Product Backlog
+🁢 Product backlog:
+🁢
+🁢
+
+List of "to-do" items that the team must tackle.
+The level of detail of the items on the backlog may vary from feature
+descriptions, user stories, or descriptions of supplementary tasks.
+
+Product Backlog: Example
+US_ID
+
+Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the operations and the
+results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the “memory”
+
+3
+
+5
+
+As a user I want to have copy and paste
+
+1
+
+6
+
+As a user I want to use trigonometric operations
+
+4
+
+7
+
+As a user I want to have a scientific graphical interface
+
+8
+
+8
+
+As a user I want to have programmer graphical interface and programmer EPIC
+operations
+
+….
+
+…
+
+…
+
+SCRUM Process: Product Big Picture
+🁢 Scrum is organized around sprints to handle the development of the
+🁢
+🁢
+🁢
+
+product
+The Product Owner has a vision of what the team will create.
+Because the product can be large, through an activity called grooming, it is
+broken down into a list of features
+The features are collected into a prioritized list (the backlog)
+🁢 The backlog contains the whole set of user stories to be developed
+US_ID Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the operations and the
+results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the “memory”
+
+3
+
+5
+
+As a user I want to have copy and paste
+
+1
+
+6
+
+As a user I want to use trigonometric operations
+
+4
+
+7
+
+As a user I want to have a scientific graphical interface
+
+8
+
+8
+
+As a user I want to have programmer graphical interface and
+programmer operations
+
+EPIC
+
+SCRUM Main Concepts: Sprint and Sprint Backlog
+🁢 Sprint: A development iteration. Usually 2 to 4 weeks long.
+🁢
+
+Sprints are rooted in the concept of time-boxing, a time-management
+technique that helps organize the performance of work and manage scope
+
+🁢 Sprint Backlog: The work (in terms of user stories) that the team plans
+carry out during a sprint
+US_ID
+
+Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the operations
+and the results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the “memory”
+
+3
+
+SCRUM Main Concepts: Velocity
+🁢 Velocity:
+🁢
+🁢
+
+An estimate of how much product backlog effort a team can cover in a single
+sprint.
+Having an accurate velocity for our team would help estimate what can be
+covered in a sprint.
+US_ID
+
+Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the operations
+and the results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the “memory”
+
+3
+
+Velocity
+
+20
+
+SCRUM Main Concepts
+🁢 Potentially shippable product increment: Software increment
+
+delivered from a sprint, ready to be included in the product (no
+further work or testing required).
+
+SCRUM Main Concepts
+🁢 Scrum:
+🁢
+🁢
+
+Daily meeting of the Scrum team to review the progress and to prioritize the
+work to be done during the day.
+Scrum meetings are (ideally) face to face meetings that include the whole
+team.
+
+SCRUM Process: Sprint Planning and Estimation
+
+🁢 Each sprint cycle lasts a fixed length of time (between 2-4 weeks).
+🁢 At the beginning of the sprint the PO prioritizes the items on the backlog to
+🁢
+
+define the most important items to be developed in the cycle.
+The teams makes a selection of the highest priority items in the backlog,
+candidates to be developed in the Sprint.
+
+SCRUM Process: Sprint Planning and Estimation
+
+🁢 The Product Owner + the team make the estimation of the time
+🁢
+
+required to complete each item.
+That estimation is usually based on the velocity (how much of the
+backlog can be covered in a single sprint.
+
+SCRUM Process: Sprint Planning and Estimation
+
+🁢 The team creates a Sprint backlog, which represents the work to be
+🁢
+
+done in that Sprint.
+The team self-organizes and decides who does what in an autonomous
+way.
+
+SCRUM Process: Sprint Planning and Estimation
+PRODUCT BACKLOG
+
+SPRINT BACKLOG
+
+US_ID
+
+Description
+
+Story
+Points
+
+US_ID
+
+Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the
+operations and the results
+
+7
+
+3
+
+As a user I want to see the “paper tape” with all the
+operations and the results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the
+“memory”
+
+3
+
+4
+
+As a user I want to be able to store numbers in the
+“memory”
+
+3
+
+5
+
+As a user I want to have copy and paste
+
+1
+
+6
+
+As a user I want to use trigonometric operations
+
+4
+
+7
+
+As a user I want to have a scientific graphical interface
+
+8
+
+8
+
+As a user I want to have programmer graphical
+interface and programmer operations
+
+EPIC
+
+….
+
+…
+
+…
+
+ur
+o
+n
+o
+d t y!
+e
+s
+B a e loci
+v
+
+SCRUM Process: SCRUM Meetings
+🁢 During the sprint the whole team has short, stand up meetings called
+
+SCRUMS
+🁢 Review the process and re-prioritize the work
+🁢 The team is flattened (no top-down direction from the Scrum Master)
+🁢 The members report about what has been done and eventual problems found
+🁢 This allows the team to react quickly and to draw contingency solutions
+
+SCRUM Process: SCRUM Meetings
+🁢 Scrum meeting are based on 3 questions:
+🁢
+🁢
+🁢
+
+What did I accomplish yesterday?
+What will I work on today?
+Anything preventing me from progressing?
+
+SCRUM Process: The SRUM Board
+🁢
+
+The daily interaction and the
+progress can be coordinated by using
+a Scrum board (ScrumBan)
+
+🁢
+
+The notes represent tasks in the
+Product Backlog
+Anyone can move or change items
+on the board
+
+🁢
+🁢
+
+This is a communication tool that
+allows the team to monitor the
+process
+
+SCRUM Process: Important Rules
+🁢 Scrum rule I: once the sprint goal has been established and sprint
+🁢
+
+execution has begun, no change is permitted that can materially affect
+the sprint goal.
+Scrum rule II: Sprints are never extended over the deadline to include
+unfinished work.
+🁢 Instead, unfinished items will be returned to the backlog if they cannot be
+completed with the allocated time planned for the sprint.
+
+SCRUM Process: SCRUM Retrospective
+At the end of each sprint there are two meetings to analyze the results at product
+and at process level
+🁢 Sprint review: time-boxed
+🁢 Sprint Retrospective: a shorter
+meeting
+time-boxed meeting after the
+Sprint review
+🁢 The team analyzes what has been
+done (and what not) during the
+🁢 The team reviews the way they
+🁢
+🁢
+
+sprint
+Analysis of what to do next at
+product level
+Provides input on the product
+backlog review (which precedes
+the next sprint planning meeting).
+
+🁢
+
+have worked during the sprint and
+reviews things could have been
+done better.
+The team identifies process
+improvements to be implemented
+on next sprint
+
+SCRUM: The Product Backlog Iceberg
+🁢
+🁢
+🁢
+🁢
+
+The backlog contains user stories described with different levels of detail.
+Items the team will work on soon must be known with sufficient detail to be
+programmed tested and integrated within a single sprint.
+Stories that are further down are larger and understood in less detail.
+These epic stories are left large, often known only to be able to roughly estimate
+them and then prioritized.
+
+Cohn, M. (2009). Succeeding with Agile: Software Development Using Scrum. Pearson Education
+
+SCRUM: The product Backlog
+🁢 Product backlog is maintained by the product owner and keeps a
+🁢
+🁢
+
+prioritized list of product features not yet included in the product.
+Allows a just in time approach for requirements without a full, upfront requirements engineering stage
+The main documentation unit in the product backlog is the user story
+🁢 A short, simple description of a given feature from the perspective of the
+person who wants the new capability
+
+🁢 User stories typically follow a simple template like:
+
+🁢 As a <type of user>, I want <somegoal> so that <some reason>
+🁢 In order to <achieve value>, as <type of user>, I want <some goal>
+🁢 At the beginning of each sprint the features should be sufficiently
+understood (just-in-time)
+
+SCRUM: Grooming the Backlog
+🁢 If we only develop the items on the top, after a few sprints the backlog
+🁢
+
+will lose its shape
+🁢 The well understood small stories will have been developed
+For keeping the backlog in shape the team has to spend ≈10% of the
+effort looking after the backlog, in preparation for future sprints.
+
+Cohn, M. (2009). Succeeding with Agile: Software Development Using Scrum. Pearson Education
+
+SCRUMS: Requirements change
+🁢 The objective is not to start the project with a complete specification
+🁢
+🁢
+🁢
+🁢
+
+of the requirements.
+Scrum assumes that requirements will change.
+Also the development of the system will make new requirements to
+emerge, while the team gains knowledge about the system.
+Since we have the code running since the very beginning, we are
+pushing for the emergent requirements to appear.
+The iterative structure of Scrum will allow the team to deal with
+emergent requirements.
+
+Agile Project Management
+
+Planning and Estimation in Agile Projects
+
+Planning and Estimation in Traditional Software Projects
+🁢 The uncertainty decreases as
+the project progresses
+🁢 during the initial product
+
+definition, the estimation can be
+60-160%.
+
+Planning and Estimation in Traditional Software Projects
+🁢 Traditional planning focus on activities completion (requirements,
+🁢
+🁢
+
+design) instead of on the development of value-adding features
+Plan-driven project estimation usually relies on Gantt charts or work
+breakdown, that identifies activities to be performed.
+🁢 These activities become the artifact we try to estimate and measure.
+Teams that overrun schedules tend to decrease the quality or cut on
+the functionalities (features) to be delivered.
+
+Reflection
+
+🁢 When is the soonest and the latest the testing task can
+start?
+
+Planning and Estimation in Traditional Software Projects
+🁢 Testing can only start earlier if and only if the three precedent activities
+finish early.
+🁢 However the testing activity will start late if only one activity is delayed
+
+33
+
+34
+
+35
+
+Planning and Estimation in Traditional Software Projects
+🁢 The traditional Gantt-chart estimations focus on dependencies among
+activities
+🁢 These relationships are defined to explain reasons for a given
+activity to start late (or what would happen if a given activity is
+delayed).
+
+Agile Planning
+🁢 A project is a long journey in which we add a lot of degrees of
+🁢
+
+uncertainty so the best approach is to do a progressive planning.
+XP, Scrum and other agile development methods rely on a two-staged
+approach to planning, which corresponds to the initial phase of a plandriven project.
+
+Agile Planning: Release Planning
+🁢 Release planning
+🁢
+🁢
+🁢
+
+Considers the user stories to be developed in each new release of the
+product.
+Determines the scope, schedule and resources for the project and it first
+occurs at the beginning of the project.
+After each release, at the beginning of each iteration, the release plan
+should be updated to reflect what will be included in the release.
+
+Agile Planning: Iteration Planning
+🁢 Iteration Planning
+🁢
+🁢
+🁢
+🁢
+
+Carried out at the beginning of each iteration
+Plan the increment to be developed in the current sprint
+Since the horizon is the sprint duration (typically 2-4 weeks) the items to
+plan are more fine-grained.
+User stories are broken down into tasks that will transform the features /
+user stories into working and tested software.
+
+Agile Planning: Day Planning
+🁢 In the planning onion, Cohn
+
+🁢
+
+(2005) identifies a third level,
+the Day Planning level
+🁢 described as informal, is
+another layer that corrects
+deviations from the plan.
+One realization of this Day
+Planning level are the daily
+meetings in SCRUM.
+Cohn, M.: Agile Estimating and Planning. Prentice Hall (2005).
+
+Estimating size with Story Points
+🁢 It is possible to estimate an agile project using relative scales, instead
+🁢
+🁢
+
+of trying to predict the exact size of the piece of software to be
+developed (whose limits and details have not yet been explored).
+Try to estimate by comparison with other user stories, and to decide
+which story is bigger or smaller than other stories and features.
+A story point is a unit of measure for expressing the overall size of a
+user story or feature.
+🁢 The raw value we assign is totally arbitrary, what matters are the relative
+
+🁢
+
+values.
+A story that is assigned a value of two, should be, roughly, twice as bigger as a
+story that is assigned a value of one.
+
+Estimating Size with Story Points
+🁢 The number of story points represents the overall, relative size of the
+🁢
+
+story.
+It does not respond to any formula, rather is the combination of many
+factors such as the effort to develop the story / feature, the
+complexity of the development, the risk etc.
+
+Estimating Size with Story Points
+🁢 1st Approach: identify the smallest story to be developed and
+🁢
+🁢
+
+determine that this will be our 1 point story prototype.
+2nd Approach: identify the ideal medium size story to establish the
+medium size 5 story points prototype.
+Once we had stablish our gold-standard we compare these goldstandard stories with the other stories and assign the story points to
+each of them.
+
+Estimating Dog Size in “Dog Points”
+Labrador Retriever
+
+Dachshund
+
+Terrier
+
+German Shepherd
+
+Great Dane
+
+Saint Bernard
+
+Poodle
+
+Bulldog
+
+Example borrowed from: M. Cohn, Agile Estimating and Planning. Prentice Hall, 2005.
+
+Menti
+🁢 Estimate the size of these dogs in dog points
+
+Labrador Retriever
+
+Dachshund
+
+Terrier
+
+German Shepherd
+
+Great Dane
+
+Saint Bernard
+
+Poodle
+
+Bulldog
+
+46
+
+Velocity
+🁢 The concept of Story Points should be combined with the concept of
+🁢
+🁢
+🁢
+
+velocity to work as a estimation technique.
+Velocity is the measure of a team rate of progress.
+Is calculated as the number of story points completed per iteration:
+🁢 Features / stories completed by the team on a given iteration
+If the team completed X story points in the last iteration, our best
+guess is that they will complete X story points this iteration.
+
+Velocity
+🁢 We can use the estimation of the size to estimate the duration and
+🁢
+🁢
+
+schedule of the project.
+With the first estimation of size for all desired features to roughly
+measure the total size of the project,
+Using the velocity we predict the number of iterations, and using the
+sprint length we can predict the total duration of the project in weeks.
+
+Velocity: Example
+US_ID
+
+Description
+
+Story
+Point
+s
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the
+operations and the results
+
+7
+
+4
+
+As a user I want to be able to store numbers in the
+“memory”
+
+3
+
+5
+
+As a user I want to have copy and paste
+
+1
+
+6
+
+As a user I want to use trigonometric operations
+
+4
+
+7
+
+As a user I want to have a scientific graphical interface
+
+8
+
+8
+
+As a user I want to have programmer graphical
+interface
+
+10
+
+9
+
+As a user I want to be able to use OR, AND, XOR and
+NOR
+
+8
+
+10
+
+As a user I want to be able to change base (binary,
+octal, decimal and hexadecimal)
+
+8
+
+11
+
+As a user I want to be able to operate with different
+bases
+
+22
+
+🁢 Lets calculate the
+
+duration of the
+calculator project if our
+velocity is 20
+
+Velocity Corrects Estimation Errors
+🁢 Velocity allows correcting estimation errors,
+🁢 It is easy to see whether we need to re-compute the duration of the
+🁢
+
+project due to an inconsistent velocity.
+The use of velocity separates the estimation of effort from the
+estimation of duration
+🁢 Duration is derived or computed based on experience (the velocity is based
+
+on the real development capabilities of the team), what makes this technique
+more robust.
+
+51
+
+52
+
+How velocity helps correcting errors
+🁢 By using the new velocity we assume that the estimation error we just
+🁢
+🁢
+
+realized is also present in all the other user stories
+Changing the velocity mitigates the problem (it will be self corrected)
+Now we just need to re-compute how many sprint it will take to
+develop the whole product
+
+How velocity helps correcting errors
+🁢 Imagine US 2 and 3 take more time and the only think we can do is
+🁢
+🁢
+
+remove US 4 and add US 5
+Now I need to re-estimate all my other user stories?
+Not really, if we update velocity to 17 and plan next sprint with that
+speed then the estimation error is corrected automatically
+US_ID
+
+Description
+
+Story
+Points
+
+1
+
+As a user I want to have a basic user interface
+
+4
+
+2
+
+As a user I want to be able to perform basic operations
++ - / %, with positive, negative and real numbers
+
+6
+
+3
+
+As a user I want to see the “paper tape” with all the operations
+and the results
+
+6
+7
+
+4
+5
+
+As a user I want to have
+be able
+copy
+to store
+and paste
+numbers in the “memory”
+
+3
+1
+
+Velocity
+
+20
+17
+
+Agile Project Management
+Kanban
+
+Kanban in Manufacturing
+🁢 Kanban, in Japanese signaling card, is a scheduling and inventory
+🁢
+
+control strategy for lean just-in-time manufacturing initially introduced
+by Toyota.
+Kanban is a strategy to limit the amount of work-in-progress as well as
+minimize the amount of works to be kept in the inventory.
+
+Kanban in Software Development
+🁢 Similarly, in software development we use a virtual Kanban system to
+🁢
+🁢
+
+limit the amount of work in progress.
+In software development the cards are not treated as signals to pull
+more work, but to represent work items.
+The signal to pull new work is inferred from the visual quantity of
+work in progress subtracted from the work limit or capacity.
+
+Kanban in Software Development
+🁢 Card walls have become popular visual control mechanism in agile
+🁢
+🁢
+🁢
+
+environments
+🁢 In the majority of the cases using a cork board with index cards pinned on it.
+But these visual panels are not a Kanban implementation themselves.
+They help on visualizing the work-in-progress and to assign task,
+manage the backlog without intervention of a project or product
+manager and so on.
+But if there is no explicit limit to the work-in-progress and no signaling
+to pull new work, is not a Kanban system.
+
+Kanban: Reducing Work in Progress
+🁢 Decreasing the work-in-progress decreases also the lead time, and
+🁢
+🁢
+
+bigger lead time increases defects
+Reducing the work in progress or shortening the length of the
+iterations has a significant direct impact on the product quality.
+A reduction of the work-in-progress allows us to control the
+throughput
+🁢 we can set the rate in which the team accepts new requirements into our
+
+development pipe to correspond with the rate in which the team can deliver
+working code.
+
+Implementing Kanban
+🁢 The idea is to drive change by optimizing the existing process
+🁢 The essence is to change as little as possible
+🁢 What should be mapped to the card-wall and monitor is not the
+official process, but the process being followed
+
+Implementing Kanban
+🁢 First: identify start and end point of our development process.
+🁢 If the work-in-process is going to be limited, the upstream and
+🁢
+🁢
+
+downstream partners should be identified.
+🁢 We should not change the policies of the surrounding partners.
+The team is only limiting their own WIP but not the WIP of the
+surrounding departments.
+The only thing these departments will change is the way they interact
+with the team.
+
+Implementing Kanban
+🁢 Decide the work item types to establish control over, as well as other
+🁢
+
+development-centric activities that exist in the workflow (system
+maintenance, refactorings, infrastructure upgrades…).
+The sources of the work need also to be identified, such as regulatory
+requirement or sales department request.
+🁢 This makes the source of the work request transparent and makes
+our team evolve to handle multiple customers (even though some
+of them can be internal to the company.
+
+Implementing Kanban
+🁢 It's typical to use a Card Wall (or a virtual one) in which reflect the
+🁢
+
+activities of our process.
+Even though we can think on function or job descriptions, Kanban in
+software project reflects the work, not the workers or functions.
+
+Implementing Kanban
+🁢 The wall is composed of columns that represent the activities in the
+order they are performed:
+
+Implementing Kanban
+🁢 Add the input queue and the intermediate steps that need to be
+visualized.
+
+Implementing Kanban
+🁢 We can add as many buffers or queues as needed
+🁢
+
+some schools of thought suggest that it is better to wait and see were the
+bottlenecks appear themselves and make the changes to introduce the
+buffers.
+
+🁢 Analyze the demand from where the work comes, the frequency and
+the required effort per work item type.
+
+Implementing Kanban
+🁢 Once the demand had been understood, we can allocate the capacity
+to cope with that demand (adding swimlanes) .
+
+Implementing Kanban
+🁢 Finally, the work in progress limits per activity. Typically the work-inprogress limits are drawn on the board at the top of each column.
+
+Implementing New Items
+🁢 Pull is signaled when the total number of cards in a column is smaller
+than the limit.
+
+Additional Bibliography
+🁢
+
+SCRUM
+🁢 Rubin, Kenneth S. (2012). Essential Scrum: A Practical Guide to the Most Popular Agile
+🁢
+🁢
+
+🁢
+
+Process. Addison Wesley.
+Schwaber, K, and Sutherland, J. (2011) “The Scrum Guide - The Definitive Guide to Scrum: The
+Rules of the Game.” Downloadable at: www.scrum.org
+Cohn, M. (2009). Succeeding with Agile: Software Development Using Scrum. Pearson
+Education
+
+Agile Planning
+🁢 Cohn, M.: Agile Estimating and Planning. Prentice Hall (2005).
+🁢 Grenning, J. 2002. “Planning Poker or How to Avoid Analysis Paralysis While Release
+
+Planning.”
+Downloadable at: https://sewiki.iai.unibonn.de/_media/teaching/labs/xp/2005a/doc.planningpoker-v1.pdf
+🁢 Andersson, David J. 2010. Kanban: Successful Evolutionary Change for Your Technology
+Business. Blue Hole Press.
+
+Agile Software Development
+Agile Project Management
+
+
